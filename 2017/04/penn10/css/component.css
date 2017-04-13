@@ -8,6 +8,8 @@ footer {
   margin-right: auto;
   margin-bottom: 35px;
   padding-bottom: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 footer > a {
@@ -228,6 +230,7 @@ footer img {
 }
 
 .penn10-header {
+  padding-top: 20px;
   max-width: 500px;
   width: 100%;
   margin: auto;
