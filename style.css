@@ -1,13 +1,162 @@
 nav img {
   padding-top: 15px;
   padding-bottom: 15px;
+  display: block;
+  margin: auto;
+  width: 125px;
 }
 
 h1 {
+  text-align: center;
   color: #4BBFBE;
   font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 80px;
+  font-size: 72px;
+  padding-top: 65px;
   /*make full width?*/
+}
+
+body {
+  font-family: "pt-serif", serif;
+  font-style: normal;
+}
+
+hr {
+  padding-bottom: 15px;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #4BBFBE;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding: 15px;
+}
+
+footer > hr {
+  padding: 0px;
+}
+
+footer > p {
+  text-align: center;
+}
+
+#featured-tag {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#tag {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#featured-title {
+  font-family: "futura-pt", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  padding-bottom: 15px;
+  line-height: 120%;
+}
+
+#title {
+  font-family: "futura-pt", sans-serif;
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+#desc {
+  font-size: 20px;
+}
+
+#credits {
+  color: #999;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+
+.row:first-of-type {
+  padding: 0px;
+}
+
+.col-md-6:first-of-type {
+  border-right: 1px solid #EEE;
+  padding-right: 40px;
+}
+
+.col-md-6:last-of-type {
+  padding-left: 40px;
+}
+
+.col-md-7, .col-md-5 {
+  padding: 15px;
+}
+
+.col-md-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+::selection {
+  background: #4BBFBE;
+  color: #FFF;
+}
+
+@media screen and (max-width: 991px) {
+  .row {
+    position: inherit;
+  }
+
+  .col-md-5 {
+    position: inherit;
+  }
+
+  .col-md-6:first-of-type {
+    border-right: none;
+    padding-right: 15px;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 40px;
+  }
+
+  .col-md-6:last-of-type {
+    border-right: none;
+    padding-left: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
 }
