@@ -41,14 +41,11 @@ footer {
   margin-right: auto;
   margin-top: 0px;
   padding: 15px;
+  text-align: center;
 }
 
 footer > hr {
   padding: 0px;
-}
-
-footer > p {
-  text-align: center;
 }
 
 #featured-tag {
