@@ -14,7 +14,15 @@ h1 {
   font-weight: 500;
   font-size: 72px;
   padding-top: 65px;
-  /*make full width?*/
+}
+
+h2 {
+  text-align: center;
+  font-family: "futura-pt", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  padding-bottom: 15px;
 }
 
 body {
@@ -23,6 +31,7 @@ body {
 }
 
 hr {
+  margin-top: 35px;
   padding-bottom: 15px;
 }
 
@@ -74,10 +83,21 @@ footer > hr {
   padding-left: 0px;
 }
 
+#all-tag {
+  font-weight: 700;
+  padding-left: 0px;
+}
+
 #date {
   font-weight: 400;
   text-align: right;
   padding-top: 15px;
+  padding-right: 0px;
+}
+
+#all-date {
+  font-weight: 400;
+  text-align: right;
   padding-right: 0px;
 }
 
@@ -130,10 +150,18 @@ footer > hr {
 }
 
 .col-md-7, .col-md-5 {
-  padding: 15px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .col-md-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.col-md-8 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -145,6 +173,10 @@ footer > hr {
 }
 
 @media screen and (max-width: 991px) {
+  hr {
+    margin-top: 30px;
+  }
+
   .row {
     position: inherit;
   }
@@ -153,17 +185,21 @@ footer > hr {
     position: inherit;
   }
 
+  .col-md-8 {
+    padding-top: 15px;
+    position: inherit;
+  }
+
   .col-md-6:first-of-type {
     border-right: none;
     padding-right: 15px;
     border-bottom: 1px solid #EEE;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   .col-md-6:last-of-type {
     border-right: none;
     padding-left: 15px;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 35px;
   }
 }
