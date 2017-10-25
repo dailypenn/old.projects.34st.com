@@ -1,3 +1,6 @@
+body {
+  background-color: #f2f2f2;
+}
 p {
   font-family: "pt-serif";
 }
@@ -8,6 +11,10 @@ h1, h2, h3, h4 {
 
 a:hover {
   text-decoration: none;
+}
+
+a i {
+  color: #4C4C4C;
 }
 
 article {
@@ -56,10 +63,10 @@ a[class*="col"] {
 
 h2 {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
   font-size: 310%;
   transition: all 200ms ease-in-out;
-  text-shadow: 0 0 15px #000;
+  text-shadow: 0 0 25px #000;
 }
 
 .styled {
@@ -68,11 +75,15 @@ h2 {
 }
 
 .hero {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #FFF;
   padding: 50px;
   margin-top: 45px;
   text-align: center;
+}
+
+.hero:not(.top) {
+  height: 250px;
 }
 
 .hero p {
@@ -99,4 +110,13 @@ h2 {
 .gray {
   background-color: #999999;
   padding-top: 100px;
+}
+
+.top {
+  background-color: #4C4C4C;
+  margin-top: 5px ;
+}
+
+.home-link {
+  margin: 15px;
 }
