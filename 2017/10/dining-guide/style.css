@@ -1,14 +1,17 @@
+p {
+  font-family: "pt-serif";
+}
+
+h1, h2, h3, h4 {
+  font-family: "futura-pt","helvetica",sans-serif;
+}
+
 a:hover {
   text-decoration: none;
 }
 
-a figure img {
-  width: 80%;
-  margin: auto;
-  display: block;
-}
-
 article {
+  color: #fff;
   position: relative;
   top: 50px;
   background-color: #44BFBF;
@@ -16,6 +19,8 @@ article {
   padding: 15px;
   transition: all 500ms ease-in-out;
   border-radius: 5px;
+  min-height: 375px;
+  margin-bottom: 15px;
 }
 
 article:hover {
@@ -28,6 +33,12 @@ article img {
   top: -25px;
   border-radius: 5px;
   box-shadow: 0 25px 25px rgba(0, 0, 0, .3);
+}
+
+article img {
+  width: 80%;
+  margin: auto;
+  display: block;
 }
 
 article:hover img {
@@ -43,12 +54,24 @@ a[class*="col"] {
   margin-bottom: 15px;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 310%;
+  transition: all 200ms ease-in-out;
+  text-shadow: 0 0 15px #000;
+}
+
+.styled {
+  font-size: 500%;
+  color: pink;
+}
 
 .hero {
-  background-color: #4C4C4C;
+  background-color: rgba(0, 0, 0, 0.5);
   color: #FFF;
-  padding: 45px;
-  margin-top: 25px;
+  padding: 50px;
+  margin-top: 45px;
   text-align: center;
 }
 
@@ -67,4 +90,13 @@ a[class*="col"] {
 .map-container iframe {
   position: relative; /* hack to hide top bar of map */
   top: -46px
+}
+
+.ad {
+  margin-top: 55px;
+}
+
+.gray {
+  background-color: #999999;
+  padding-top: 100px;
 }
