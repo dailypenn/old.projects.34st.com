@@ -88,38 +88,45 @@ section {
 }
 
 /**ARTICLE CSS**/
-#article-hero {
-	padding-left: 20%;
+
+.article-hero {
+	padding-left: 15%;
 	min-height: 300px;
 	height: auto;
 	background-color: #e8e8e8;
 	padding-bottom: 150px;
 }
 
-#article-hero h1 {
+.article-hero h1 {
 	padding-top: 75px;
 	width: 60%;
 	text-align: left;
 	font-size: 4em;
 }
 
-#article-hero h2 {
+.article-hero h2 {
 	margin-top: 15px;
 	text-align: left;
 	font-size: 1em;
 	width: 60%;
 }
 
-#article-header-img {
-	height: 500px;
-	width: 60%;
+.article-header-img {
+	max-height: 400px;
+	width: auto;
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s;
+}
+
+.article-header-img:hover {
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 #article-copy {
 	padding-top: 100px;
 	background-color: #f4f4f4;
-	padding-left: 20%;
-	padding-right: 20%;
+	padding-left: 15%;
+	padding-right: 15%;
 	width: 100%;
 }
 
@@ -129,4 +136,47 @@ section {
   line-height: 1;
   font-weight: bold;
   margin-right: 9px;
+}
+
+.hr-div {
+	padding: 0;
+	margin-top: -20px;
+	width: 70%;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.custom-hr {
+	float: left;
+	width: 43%;
+	border: 1px solid #313132;
+}
+.stars {
+	float: left;
+	width: 10%;
+	font-size: large;
+}
+
+.image-description {
+	text-align: left;
+	font-size: small;
+	width: 50%;
+}
+
+.image-author {
+	text-align: left;
+	width: 50%;
+}
+
+#sample-article {
+	background: url(https://pixel.nymag.com/imgs/fashion/daily/2016/06/23/23-Nargus-Harounzadeh.w710.h473.jpg) no-repeat center center fixed; 
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
