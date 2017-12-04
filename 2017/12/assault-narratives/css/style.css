@@ -57,7 +57,7 @@ section {
 }
 
 .column {
-	float: left;
+	float: right;
 	width: 25%;
 }
 
@@ -179,4 +179,48 @@ section {
   -o-background-size: cover;
   background-size: cover;
 
+}
+
+/**Media Queries**/
+@media screen and (max-width: 900px){
+		#hero h2 {
+        width: 90%;
+    }
+    #content-warning, #resources {
+	    margin-top: 25px;	
+	    width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .column {
+			width: 100%;
+			float: right;
+		}
+}
+
+@media screen and (max-width: 800px) and (min-width : 500px) {
+    .column {
+	    align-content: center;
+			width: 100%;
+			float: none;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card {
+			width: 45%;
+		}
+}
+
+@media screen and (max-width: 1200px) and (min-width : 800px) {
+    .column {
+	    align-content: center;
+			width: 100%;
+			float: none;
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.card {
+			width: 30%;
+		}
 }
