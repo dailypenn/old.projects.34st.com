@@ -190,6 +190,41 @@ section {
 	    margin-top: 25px;	
 	    width: 80%;
     }
+    .image-description {
+			width: 80%;
+		}
+		.image-author {
+			width: 80%;
+		}
+		.article-header-img {
+			max-height: 175px;
+		}
+		.article-hero {
+			padding-left: 5%;
+		}
+		#article-copy {
+			padding-left: 5%;
+			padding-right: 5%;
+			padding-bottom: 50px;
+		}
+    .hr-div {
+			margin-top: 0px;
+			width: 90%;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.custom-hr {
+			float: left;
+			width: 40%;
+			border: 1px solid #313132;
+		}
+		.stars {
+		float: left;
+		width: 15%;
+		font-size: medium;
+		}
 }
 
 @media screen and (max-width: 500px){
