@@ -196,6 +196,8 @@ i {
 
 .article-warning {
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 .article-copy p:first-of-type:first-letter {
@@ -298,6 +300,9 @@ i {
 	.article-hero {
 		padding-left: 5%;
 	}
+  .article-warning {
+    width: 100%;
+  }
   .hr-div {
 		display: block;
 		padding-left: 15px;
