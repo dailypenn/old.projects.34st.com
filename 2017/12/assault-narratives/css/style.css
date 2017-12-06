@@ -54,13 +54,22 @@ img {
 
 nav {
   background-color: #333;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav a.article-back {
+  color: white;
+  text-decoration: none;
+  float: left;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 nav img {
   padding-top: 15px;
   padding-bottom: 15px;
-  display: block;
-  margin: auto;
   width: 115px;
 }
 
