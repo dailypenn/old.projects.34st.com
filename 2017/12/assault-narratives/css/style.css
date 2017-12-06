@@ -285,6 +285,106 @@ i {
   background-size: cover;
 }
 
+#the-post-i-should-have-written {
+  background: url(../img/the-post-i-should-have-written.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#taken-years {
+  background: url(../img/taken-years.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#six {
+  background: url(../img/six.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#change-made {
+  background: url(../img/change-made.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#why-shouldnt-i {
+  background: url(../img/why-shouldnt-i.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#its-not-your-fault {
+  background: url(../img/its-not-your-fault.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#he-took-anyway {
+  background: url(../img/he-took-anyway.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#black-out-sex {
+  background: url(../img/black-out-sex.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#two-21-15 {
+  background: url(../img/2-21-15.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#help-us {
+  background: url(../img/help-us.png) no-repeat center center fixed;
+  background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /**Media Queries**/
 @media screen and (max-width: 900px){
   #hero h1 {
