@@ -16,7 +16,22 @@ body {
 
 section {
 	height: auto;
-	padding: 0px 0px 0px 0px;
+	padding: 0;
+}
+
+section#hero {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section#cards {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section#resources-section {
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 section.article {
@@ -55,6 +70,12 @@ nav img {
 	font-size: 4em;
 }
 
+#hero h3 {
+  margin-top: 15px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
 #hero .lead {
 	margin-top: 30px;
 	text-align: left;
@@ -69,20 +90,15 @@ i {
 }
 
 #content-warning {
-	margin-top: 100px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	/*border: 1px solid black;*/
 	width: 30%;
-	padding: 20px;
 }
 
 #resources {
-	margin: 25px auto;
+	margin: 50px auto;
 	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
 	border: 1px solid #888;
 	width: 80%;
 	padding: 20px;
@@ -97,6 +113,10 @@ i {
   color: #888;
   font-style: italic;
   font-size: 80%;
+}
+
+#resources p:last-of-type {
+  margin-bottom: 0;
 }
 
 #resources b {
@@ -118,6 +138,10 @@ i {
 	margin-bottom: 30px;
 	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.05);
 	transition: all 0.3s;
+}
+
+.card:last-of-type {
+	margin-bottom: 0;
 }
 
 .card:hover {
@@ -151,9 +175,17 @@ i {
 
 .article-hero h1 {
 	padding-top: 75px;
-	width: 60%;
+	width: 80%;
 	text-align: left;
 	font-size: 4em;
+}
+
+.article-hero h2 {
+	margin-top: 10px;
+  margin-bottom: 10px;
+	width: 80%;
+	text-align: left;
+	font-size: 1.2em;
 }
 
 .article-hero .lead {
@@ -178,10 +210,6 @@ i {
   text-align: center;
 }
 
-.article-resources {
-  text-align: center;
-}
-
 .article-copy p:first-of-type:first-letter {
   float: left;
   font-size: 45px;
@@ -196,6 +224,12 @@ i {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.hr-div.homepage {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 60%;
 }
 
 .custom-hr {
@@ -232,7 +266,6 @@ i {
 
 #moment-dark-article {
 	background: url(../img/a-moment-in-the-dark.png) no-repeat center center fixed;
-	background: url(https://pixel.nymag.com/imgs/fashion/daily/2016/06/23/23-Nargus-Harounzadeh.w710.h473.jpg) no-repeat center center fixed;
 	background-color: rgba(255, 255, 255, 0.75);
   background-blend-mode: screen;
   -webkit-background-size: cover;
@@ -243,15 +276,20 @@ i {
 
 /**Media Queries**/
 @media screen and (max-width: 900px){
-	#hero h2 {
-    width: 90%;
+  #hero h1 {
+    font-size: 3em;
   }
   #hero .lead {
-    width: 95%;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
   }
   #content-warning, #resources {
-    margin-top: 25px;
-    width: 95%;
+    width: 100%;
+  }
+  .card {
+    margin-left: 0;
+    margin-right: 0;
   }
   .article-hero h1 {
     font-size: 3em;
@@ -274,8 +312,14 @@ i {
 	}
   .hr-div {
 		display: block;
-		margin-left: auto;
-		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+  #hero .hr-div {
+		padding: 0;
+	}
+  .hr-div.homepage {
+		width: 100%;
 	}
 	.custom-hr {
 		width: 40%;
