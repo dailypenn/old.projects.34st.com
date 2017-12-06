@@ -98,6 +98,15 @@ i {
   font-style: italic;
 }
 
+a.card {
+  text-decoration: none;
+  color: #313132;
+}
+
+a.card:hover {
+  color: #888;
+}
+
 #content-warning {
 	text-align: center;
 	margin-left: auto;
