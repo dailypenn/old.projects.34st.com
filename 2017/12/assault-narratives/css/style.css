@@ -285,6 +285,86 @@ i {
   background-size: cover;
 }
 
+#still-look-normal-article {
+	background: url(../img/still-look-normal.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#firsts-article {
+	background: url(../img/firsts.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#alone-in-this-article {
+	background: url(../img/alone-in-this.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#kissed-stranger-article {
+	background: url(../img/on-the-bus.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#what-i-cost-article {
+	background: url(../img/what-i-cost.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#three-article {
+	background: url(../img/three.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#happens-to-you-article {
+	background: url(../img/til-it-happens-to-you.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#haunted-article {
+	background: url(../img/haunted.png) no-repeat center center fixed;
+	background-color: rgba(255, 255, 255, 0.75);
+  background-blend-mode: screen;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /**Media Queries**/
 @media screen and (max-width: 900px){
   #hero h1 {
