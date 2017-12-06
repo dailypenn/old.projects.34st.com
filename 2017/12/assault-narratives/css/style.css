@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
 
-HTML {
+html {
   height: 100%;
   width: 100%;
 }
@@ -19,6 +19,10 @@ section {
 	height: auto;
 	padding: 0px 0px 0px 0px;
 	background-color: #F7F9FD;
+}
+
+img {
+  width: 100%;
 }
 
 #hero h1 {
@@ -79,7 +83,7 @@ section {
 	background-color: rgba(255, 255, 255, 0);
 	border: none;
 	font-size: 2em;
-	color: #333	
+	color: #333
 }
 
 #arrow-btn {
@@ -171,7 +175,7 @@ section {
 }
 
 #sample-article {
-	background: url(https://pixel.nymag.com/imgs/fashion/daily/2016/06/23/23-Nargus-Harounzadeh.w710.h473.jpg) no-repeat center center fixed; 
+	background: url(https://pixel.nymag.com/imgs/fashion/daily/2016/06/23/23-Nargus-Harounzadeh.w710.h473.jpg) no-repeat center center fixed;
 	background-color: rgba(255, 255, 255, 0.75);
   background-blend-mode: screen;
   -webkit-background-size: cover;
@@ -187,7 +191,7 @@ section {
         width: 90%;
     }
     #content-warning, #resources {
-	    margin-top: 25px;	
+	    margin-top: 25px;
 	    width: 80%;
     }
     .image-description {
