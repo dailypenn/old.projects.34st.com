@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900');
 
-HTML {
+html {
   height: 100%;
   width: 100%;
 }
@@ -33,13 +33,17 @@ section.article>div {
   margin-bottom: 50px;
 }
 
+img {
+  width: 100%;
+}
+
 #hero h1 {
 	margin-top: 100px;
 	text-align: center;
 	font-size: 4em;
 }
 
-#hero h2 {
+#hero .lead {
 	margin-top: 30px;
 	text-align: left;
 	font-size: 1em;
@@ -48,24 +52,48 @@ section.article>div {
 	margin-right: auto;
 }
 
+i {
+  font-style: italic;
+}
+
 #content-warning {
 	margin-top: 100px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	width: 30%;
 	padding: 20px;
 }
 
 #resources {
-	margin-top: 50px;
-	text-align: center;
+	margin: 25px auto;
+	text-align: left;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid black;
-	width: 30%;
+	border: 1px solid #888;
+	width: 80%;
 	padding: 20px;
+}
+
+#resources a, #resources a:active {
+  color: #000;
+  text-decoration: underline;
+}
+
+#resources p {
+  color: #888;
+  font-style: italic;
+  font-size: 80%;
+}
+
+#resources b {
+  color: #000;
+  font-style: normal;
+}
+
+#cards {
+  display: inline-block;
 }
 
 .column {
@@ -116,7 +144,7 @@ section.article>div {
 	font-size: 4em;
 }
 
-.article-hero h2 {
+.article-hero .lead {
 	margin-top: 15px;
 	text-align: left;
 	font-size: 1em;
@@ -192,6 +220,7 @@ section.article>div {
 
 #moment-dark-article {
 	background: url(../img/a-moment-in-the-dark.png) no-repeat center center fixed;
+	background: url(https://pixel.nymag.com/imgs/fashion/daily/2016/06/23/23-Nargus-Harounzadeh.w710.h473.jpg) no-repeat center center fixed;
 	background-color: rgba(255, 255, 255, 0.75);
   background-blend-mode: screen;
   -webkit-background-size: cover;
@@ -205,9 +234,12 @@ section.article>div {
 	#hero h2 {
     width: 90%;
   }
+  #hero .lead {
+    width: 95%;
+  }
   #content-warning, #resources {
     margin-top: 25px;
-    width: 80%;
+    width: 95%;
   }
   .article-hero h1 {
     font-size: 3em;
