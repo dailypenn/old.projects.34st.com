@@ -1,0 +1,76 @@
+{
+  "featured": [
+    {
+      "title": "End the Silence: Sexual Assault Survivors at Penn Share Their Stories",
+      "author": "Web Dev: Brady Africk, Andrew Fischer, Alex Graves",
+      "section": "features",
+      "date": "December 2017",
+      "description": "Content warning: sexual assault and violence | Sexual assault survivors at Penn share their stories.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2017/12/assault-narratives/",
+      "image": "http://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png"
+    },
+    {
+      "title": "Dining Guide Fall 2017",
+      "author": "Web Dev: Jess Peng, Andrew Fischer",
+      "section": "guides",
+      "date": "October 2017",
+      "description": "Step outside the Penn bubble and see what one of America's greatest food cities has to offer.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2017/10/dining-guide/",
+      "image": "https://snworksceo.imgix.net/dpn-34s/5d9cb1de-a1c4-4171-8e2d-2acec48f674c.sized-1000x1000.png"
+    },
+    {
+      "title": "Penn10: Ten of Penn's Most Impressive Seniors",
+      "author": "Web Dev: Andrew Fischer",
+      "section": "Projects",
+      "date": "April 2017",
+      "description": "Read about ten of Penn's extraordinary seniors, brought to you by 34th Street and made possible by Penn Alumni.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2017/04/penn10/",
+      "image": "https://s3.amazonaws.com/media.dpn/58893_penn10f.png"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Shoutouts Spring 2017",
+      "author": "Web Dev: Andrew Fischer",
+      "section": "shoutouts",
+      "date": "April 2017",
+      "description": "Read this spring's shoutouts!",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2017/04/shoutouts/",
+      "image": "https://s3.amazonaws.com/media.dpn/59031_shoutoutsf.png"
+    },
+    {
+      "title": "Dining Guide Spring 2017",
+      "author": "Web Dev: Nolan Hill, Andrew Fischer",
+      "section": "guides",
+      "date": "March 2017",
+      "description": "Explore Street's favorite places to eat on this interactive map.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2017/03/dining-guide/",
+      "image": "https://s3.amazonaws.com/media.dpn/58892_diningguidef.png"
+    },
+    {
+      "title": "Dining Guide Fall 2016",
+      "author": "Web Dev: Nolan Hill",
+      "section": "guides",
+      "date": "October 2016",
+      "description": "Explore Street's favorite places to eat on this interactive map.",
+      "sponsored": false,
+      "link": "http://projects.thedp.com/2016/10/dining-guide/",
+      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgf.png"
+    },
+    {
+      "title": "The Dividing Line",
+      "author": "Web Dev: Dhruv Agarwal, Joseph Gao, Luke Chen",
+      "section": "features",
+      "date": "April 2015",
+      "description": "Students' perceptions of cocaine perpetuate a split dichotomy.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2015/04/the-dividing-line/",
+      "image": "https://s3.amazonaws.com/media.dpn/58891_dividinglinef.png"
+    }
+  ]
+}
