@@ -63,7 +63,9 @@
         var htmlStr = '';
         if (artIndex === 0) {
           htmlStr =
-            '<div class="col-md-7"><img src="' + article.image + '" class="img img-responsive"></div>' +
+            '<div class="col-md-7">' +
+              '<img src="' + article.image + '" class="img img-responsive" alt ="' + article.alt + '">' +
+            '</div>' +
             '<div class="col-md-5">' +
               '<div class="row" id="info">' +
                 '<div class="col-xs-6" id="featured-tag">' + article.section + '</div>' +
@@ -79,7 +81,9 @@
         } else {
           htmlStr =
             '<div class="col-md-6">' +
-              '<div class="row"><img src="' + article.image + '" class="img img-responsive"></div>' +
+              '<div class="row">' +
+                '<img src="' + article.image + '" class="img img-responsive" alt ="' + article.alt + '">' +
+              '</div>' +
               '<div class="row" id="info">' +
                 '<div class="col-xs-6" id="tag">' + article.section + '</div>' +
                 '<div class="col-xs-6" id="date">' + article.date + '</div>' +
@@ -99,7 +103,7 @@
         var htmlStr =
           '<div class="row">' +
             '<div class="col-md-4">' +
-              '<img src="' + article.image + '" class="img img-responsive">' +
+              '<img src="' + article.image + '" class="img img-responsive" alt ="' + article.alt + '">' +
             '</div>' +
             '<div class="col-md-8">' +
               '<div class="row" id="info">' +

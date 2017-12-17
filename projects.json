@@ -8,7 +8,8 @@
       "description": "Content warning: sexual assault and violence | Sexual assault survivors at Penn share their stories.",
       "sponsored": false,
       "link": "http://projects.34st.com/2017/12/assault-narratives/",
-      "image": "http://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png"
+      "image": "http://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png",
+      "alt": "end the silence"
     },
     {
       "title": "Dining Guide Fall 2017",
@@ -18,7 +19,8 @@
       "description": "Step outside the Penn bubble and see what one of America's greatest food cities has to offer.",
       "sponsored": false,
       "link": "http://projects.34st.com/2017/10/dining-guide/",
-      "image": "https://snworksceo.imgix.net/dpn-34s/5d9cb1de-a1c4-4171-8e2d-2acec48f674c.sized-1000x1000.png"
+      "image": "https://snworksceo.imgix.net/dpn-34s/5d9cb1de-a1c4-4171-8e2d-2acec48f674c.sized-1000x1000.png",
+      "alt": "dining guide fall 2017"
     },
     {
       "title": "Penn10: Ten of Penn's Most Impressive Seniors",
@@ -28,7 +30,8 @@
       "description": "Read about ten of Penn's extraordinary seniors, brought to you by 34th Street and made possible by Penn Alumni.",
       "sponsored": false,
       "link": "http://projects.34st.com/2017/04/penn10/",
-      "image": "https://s3.amazonaws.com/media.dpn/58893_penn10f.png"
+      "image": "https://s3.amazonaws.com/media.dpn/58893_penn10f.png",
+      "alt": "penn10"
     }
   ],
   "articles": [
@@ -40,7 +43,8 @@
       "description": "Read this spring's shoutouts!",
       "sponsored": false,
       "link": "http://projects.34st.com/2017/04/shoutouts/",
-      "image": "https://s3.amazonaws.com/media.dpn/59031_shoutoutsf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/59031_shoutoutsf.png",
+      "alt": "shoutouts spring 2017"
     },
     {
       "title": "Dining Guide Spring 2017",
@@ -50,7 +54,8 @@
       "description": "Explore Street's favorite places to eat on this interactive map.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2017/03/dining-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/58892_diningguidef.png"
+      "image": "https://s3.amazonaws.com/media.dpn/58892_diningguidef.png",
+      "alt": "dining guide spring 2017"
     },
     {
       "title": "Dining Guide Fall 2016",
@@ -60,7 +65,8 @@
       "description": "Explore Street's favorite places to eat on this interactive map.",
       "sponsored": false,
       "link": "http://projects.thedp.com/2016/10/dining-guide/",
-      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgf.png"
+      "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgf.png",
+      "alt": "dining guide fall 2016"
     },
     {
       "title": "The Dividing Line",
@@ -70,7 +76,8 @@
       "description": "Students' perceptions of cocaine perpetuate a split dichotomy.",
       "sponsored": false,
       "link": "http://projects.34st.com/2015/04/the-dividing-line/",
-      "image": "https://s3.amazonaws.com/media.dpn/58891_dividinglinef.png"
+      "image": "https://s3.amazonaws.com/media.dpn/58891_dividinglinef.png",
+      "alt": "the dividing line"
     }
   ]
 }
