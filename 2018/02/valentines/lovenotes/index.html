@@ -104,13 +104,29 @@
     }
   }
 
+  var shuffle = function() {
+    var curr = NOTES.length, temp, random;
+
+    // While there remain elements to shuffle...
+    while (0 !== curr) {
+      // Pick a remaining element...
+      random = Math.floor(Math.random() * curr);
+      curr--;
+
+      // And swap it with the current element.
+      temp = NOTES[curr];
+      NOTES[curr] = NOTES[random];
+      NOTES[random] = temp;
+    }
+  }
+
   $(document).ready(function() {
     var csv = $.get('notes.csv', function( data ) {
       NOTES = $.csv.toArrays(data);
+      shuffle();
       renderNotes();
 
       $("#search").on('change keydown paste input', function(evt){
-        console.log("in this loop");
         var searchText = $("#search").val().toLowerCase();
         if (searchText.length == 0) {
           $('.square').each(function(index, el) { $(el).show(); });
