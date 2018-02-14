@@ -26,7 +26,7 @@
   <script>
     window.fbAsyncInit = function() {
       FB.init({
-        appId            : '1042075185814231',
+        appId            : '1965741177036781',
         autoLogAppEvents : true,
         xfbml            : true,
         version          : 'v2.12'
@@ -41,6 +41,13 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+
+  <div class="nav">
+    <a href="/2018/02/valentines/" class="valentines-link" target="_blank">« Return to Valentine's Content</a>
+    <a href="http://www.34st.com" class="street-link" target="_blank">
+      <img class="street-logo" src="../../../../34st-logotype.svg" alt="34th Street">
+    </a>
+  </div>
 
   <div class="container">
     <h1>Love Notes</h1>
@@ -88,7 +95,7 @@
         '<div class="table">' +
         '<div class="table-cell">' +
         curNote[0] + '<br>' +
-        `<a onclick="shareFb('${curNote[0]}')"><img src='facebook.svg' class='share-icon'> Share </a>` +
+        `<a class="share" onclick="shareFb('${curNote[0]}')"><img src='facebook.svg' class='share-icon'> Share </a>` +
         '</ul>' +
         '</div>' +
         '</div>' +
@@ -98,7 +105,7 @@
   }
 
   $(document).ready(function() {
-    var csv = $.get('./notes.csv', function( data ) {
+    var csv = $.get('notes.csv', function( data ) {
       NOTES = $.csv.toArrays(data);
       renderNotes();
 
@@ -143,7 +150,7 @@
     FB.ui({
       method: 'share',
       display: 'popup',
-      href: 'http://projects.thedp.com/2018/02/valentines/lovenotes/',
+      href: 'http://projects.34st.com/2018/02/valentines/lovenotes/',
       quote: msg,
     }, function(response){});
   };

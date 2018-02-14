@@ -40,6 +40,29 @@ font-style:normal;
 font-weight:400;
 }
 
+.nav {
+  background-color: #604856;
+  text-align: left;
+  height: 50px;
+}
+
+.valentines-link {
+  display: inline-block;
+  margin-top: 12px;
+  margin-left: 15px;
+  font-size: 80%;
+}
+
+.street-link {
+  margin: auto;
+}
+
+.street-logo {
+  float: right;
+  height: 50px;
+  padding: 10px;
+}
+
 .square {
   float:left;
   position: relative;
@@ -115,7 +138,7 @@ h1, h2, h3, h4 {
   margin: 20px;
 }
 
-a {
+a.share{
   float: right;
   position: absolute;
   bottom: 3px;
@@ -138,8 +161,19 @@ a {
 }
 
 @media screen and (max-width: 720px) {
-  body {
-    padding: 15px;
+  .nav {
+    text-align: center;
+    height: auto;
+    padding: 10px;
+  }
+  .valentines-link {
+    margin: 0;
+  }
+  .street-logo {
+    float: none;
+  }
+  .input-group {
+    margin-bottom: 15px;
   }
   .row {
     margin: 0;

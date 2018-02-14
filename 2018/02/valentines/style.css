@@ -88,6 +88,10 @@ h5 {
   font-style: italic;
 }
 
+h4, h5 {
+  margin-top: 40px;
+}
+
 p {
   line-height: 1.2
 }
@@ -112,7 +116,7 @@ a:hover h3, a:hover h5 {
   color: #916a80;
 }
 
-a.button {
+a.button, a.button-dark {
   transition: all 200ms ease-in-out;
   font-family: "europa";
   font-style: italic;
@@ -125,6 +129,21 @@ a.button {
 a.button:hover {
   color: #edbebe;
   border: 1px solid #edbebe;
+}
+
+a.button-dark {
+  transition: all 800ms ease-in-out;
+  text-transform: uppercase;
+}
+
+a.button-dark:hover {
+  color: #604856;
+  border: 1px solid #604856;
+}
+
+.lovenotes {
+  margin-top: 50px;
+  text-align: center;
 }
 
 .nav {
@@ -215,6 +234,10 @@ a.button:hover {
 }
 
 @media screen and (max-width: 768px) {
+  h5 {
+    margin-top: 0;
+  }
+  
   .left-col, .right-col {
     text-align: center;
     padding-left: 15px;
