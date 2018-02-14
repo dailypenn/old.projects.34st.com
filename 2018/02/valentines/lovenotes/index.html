@@ -87,15 +87,15 @@
   var renderNotes = function() {
     notesList = $('#lovenotes')
 
-    for (var note in NOTES) {
-      var curNote = NOTES[note];
+    for (var i in NOTES) {
+      var note = NOTES[i];
       notesList.append(
         '<div class="square">' +
         '<div class="content">' +
         '<div class="table">' +
         '<div class="table-cell">' +
-        curNote[0] + '<br>' +
-        `<a class="share" onclick="shareFb('${curNote[0]}')"><img src='facebook.svg' class='share-icon'> Share </a>` +
+        note[0] + '<br>' +
+        `<a class="share" onclick="shareFb('${note[0]}')"><img src='facebook.svg' class='share-icon'> Share </a>` +
         '</ul>' +
         '</div>' +
         '</div>' +
@@ -120,6 +120,22 @@
     }
   }
 
+  var search = function() {
+    var searchText = $("#search").val().toLowerCase();
+    if (searchText.length == 0) {
+      $('.square').each(function(index, el) { $(el).show(); });
+    }
+
+    async.each($('.square'), function(note, err) {
+      var text = $(note).find('.table-cell')[0];
+      if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
+        $(note).hide();
+      } else {
+        $(note).show();
+      }
+    });
+  }
+
   $(document).ready(function() {
     var csv = $.get('notes.csv', function( data ) {
       NOTES = $.csv.toArrays(data);
@@ -127,37 +143,13 @@
       renderNotes();
 
       $("#search").on('change keydown paste input', function(evt){
-        var searchText = $("#search").val().toLowerCase();
-        if (searchText.length == 0) {
-          $('.square').each(function(index, el) { $(el).show(); });
-        }
-
         if (evt.which == 13 || evt.keyCode == 13) {
-          async.each($('.square'), function(note, err) {
-            var text = $(note).find('.table-cell')[0];
-            if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
-              $(note).hide();
-            } else {
-              $(note).show();
-            }
-          });
+          search();
         }
       });
 
       $("#search-icon").on('click', function(evt){
-        var searchText = $("#search").val().toLowerCase();
-        if (searchText.length == 0) {
-          $('.square').each(function(index, el) { $(el).show(); });
-        }
-
-        async.each($('.square'), function(note, err) {
-          var text = $(note).find('.table-cell')[0];
-          if (text.innerHTML.toLowerCase().indexOf(searchText) == -1) {
-            $(note).hide();
-          } else {
-            $(note).show();
-          }
-        });
+        search();
       });
     });
   });
