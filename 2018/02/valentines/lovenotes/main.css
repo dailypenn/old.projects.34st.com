@@ -123,6 +123,11 @@ a:hover {
   cursor: pointer;
 }
 
+a:focus {
+  text-decoration: none;
+  color: #FFF;
+}
+
 span#search-icon {
   cursor: pointer;
 }
