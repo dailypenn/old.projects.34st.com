@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Love Issue 2018",
+      "author": "Web Dev: Jamie Tomlinson, Alex Graves",
+      "section": "guides",
+      "date": "February 2018",
+      "description": "For Valentine's Day this year, we wanted to collect stories that gestured at the reality of love as we feel it: messy, sticky, weird, and something we can't claim to fully understand.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2018/02/valentines/",
+      "image": "https://snworksceo.imgix.net/dpn/47468b32-5147-44d5-a975-078bc06bed20.sized-1000x1000.png",
+      "alt": "love issue 2018"
+    },
+    {
       "title": "End the Silence: Sexual Assault Survivors at Penn Share Their Stories",
       "author": "Web Dev: Brady Africk, Andrew Fischer, Alex Graves",
       "section": "features",
@@ -21,7 +32,9 @@
       "link": "http://projects.34st.com/2017/10/dining-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/5d9cb1de-a1c4-4171-8e2d-2acec48f674c.sized-1000x1000.png",
       "alt": "dining guide fall 2017"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Penn10: Ten of Penn's Most Impressive Seniors",
       "author": "Web Dev: Andrew Fischer",
@@ -32,9 +45,7 @@
       "link": "http://projects.34st.com/2017/04/penn10/",
       "image": "https://s3.amazonaws.com/media.dpn/58893_penn10f.png",
       "alt": "penn10"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Shoutouts Spring 2017",
       "author": "Web Dev: Andrew Fischer",
