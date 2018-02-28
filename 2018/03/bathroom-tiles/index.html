@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Guess the Bathroom By Its Tile | 34th St Magazine</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/async/2.1.4/async.min.js" charset="utf-8"></script>
+</head>
+<body>
+  <h1>Guess the Bathroom By Its Tile</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: The only room in the building that has been renovated since 1980.
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: DRL
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: Everyone here is on their phone procrastinating.
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: VP Basement
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: If you didn’t vomit in here, did you really go out?
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: Allegro
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: Alternatively, if you didn’t vomit in here, did you really go out?
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: Wawa
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: Where Amy G does her business.
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: College Hall First Floor
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: There is never not pee on the seat.
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: Quad Bathroom
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: The only quiet study room where finding a seat is easy.
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: Huntsman
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="flip-container">
+            <div class="flipper">
+              <div class="front card">
+                <img class="card-img-top image" src="http://snworksceo.imgix.net/dpn/c0bdc10a-811a-45cb-a823-7ea039900517.sized-1000x1000.jpg">
+                <div class="card-body">
+                  <div class="card-text">
+                    Hint: You’ve sat here wondering if you were lactose intolerant.
+                  </div>
+                </div>
+              </div>
+              <div class="back card card-box">
+                <div class="card-body">
+                  Answer: Ben & Jerry’s
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+
+    $(".flip-container").on('click', function(event) {
+      event.preventDefault();
+      $(this).toggleClass('flip');
+    })
+  })
+
+  </script>
+</body>
+</html>
+
+<!-- <div class="row">
+  <div class="col-sm">
+    <div class="flip-container">
+        <div class="flipper">
+          <div class="front card">
+            <img src="">
+          </div>
+          <div class="back card">
+
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm">
+    <div class="flip-container">
+        <div class="flipper">
+          <div class="front card">
+            <img src="">
+          </div>
+          <div class="back card">
+
+          </div>
+      </div>
+    </div>
+  </div>
+</div> -->
