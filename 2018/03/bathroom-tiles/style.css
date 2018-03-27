@@ -1,7 +1,3 @@
-body {
-  font-family: 'futura-pt'
-}
-
 @font-face {
   font-family:"futura-pt";
   src:url("https://use.typekit.net/af/1428fc/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1428fc/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1428fc/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
@@ -14,9 +10,24 @@ body {
   font-style:normal;font-weight:700;
 }
 
-.card-box, .image {
+body {
+  font-family: 'futura-pt'
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border-radius: 0;
+}
+
+.my-card {
+  padding: 0;
+}
+
+.card-box {
   width: 100%;
-  height: 200px;
 }
 
 .card-text {
@@ -27,7 +38,6 @@ body {
 	perspective: 1000px;
   padding: 10px;
 }
-
 
 .flip .flipper {
 	transform: rotateY(180deg);
@@ -41,6 +51,7 @@ body {
 
 .front, .back {
 	backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .front {
@@ -53,13 +64,12 @@ body {
   position: absolute;
 	top: 0;
 	left: 0;
-  height: 310px;
 }
 
 .card-body {
   height: 100px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .back .card-body {
@@ -67,16 +77,9 @@ body {
 }
 
 .card {
-  border-width: thick;
-  border-color: black;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: calc(0.25rem + 1px);
   display: flex;
   justify-content: center;
-}
-
-h1 {
-  text-align: center;
-}
-
-@media screen and (max-width 576px) {
-  
 }
