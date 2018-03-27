@@ -41,6 +41,7 @@ body {
 
 .front, .back {
 	backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .front {
@@ -78,5 +79,5 @@ h1 {
 }
 
 @media screen and (max-width 576px) {
-  
+
 }
