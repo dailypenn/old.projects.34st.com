@@ -53,4 +53,30 @@ body {
   position: absolute;
 	top: 0;
 	left: 0;
+  height: 310px;
+}
+
+.card-body {
+  height: 100px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.back .card-body {
+  font-size: 60px;
+}
+
+.card {
+  border-width: thick;
+  border-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+@media screen and (max-width 576px) {
+  
 }
