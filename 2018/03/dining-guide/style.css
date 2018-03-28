@@ -39,6 +39,10 @@ h5 {
   text-transform: uppercase;
 }
 
+h6.title {
+  color: #326522;
+}
+
 footer {
   text-align: center;
   margin: 15px;
@@ -48,14 +52,13 @@ img {
   margin: 20px auto 10px;
 }
 
-a {
+a, a:hover, a:focus {
   color: #326522;
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:focus {
   color: #a5c639;
-  text-decoration: none;
 }
 
 p.italics {
@@ -78,15 +81,18 @@ hr {
   margin-top: 50px;
 }
 
-.map {
-  background-repeat: no-repeat;
-  background-size: cover;
-  right: 0;
+#map {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+}
+
+#map.mapboxgl-map {
+  font-family: 'Proxima Nova';
+}
+
+#map.mapboxgl-map h4 {
+  font-family: 'Bodoni';
+  margin-top: 10px;
 }
 
 .street-logo {
@@ -109,6 +115,10 @@ hr {
   padding: 15px;
   overflow-y: scroll;
   background-color: #e8e8de;
+}
+
+.item {
+  cursor: pointer;
 }
 
 .item:not(:last-of-type) {
@@ -166,7 +176,6 @@ hr {
 .title-see-more {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
   align-items: center;
   color: #326522;
 }
@@ -186,13 +195,12 @@ hr {
   }
 
   .listing-box {
-    /* display: none; */
     position: relative;
   }
 
   .listings {
     width: 100%;
-    height: calc(33vh - 40px);
+    height: 33vh;
     top: 67vh;
   }
 }

@@ -18,8 +18,8 @@
   <meta name="twitter:url" content="http://projects.34st.com/2018/03/dining-guide/">
   <meta name="twitter:site" content="@34ST">
 
-  <script src="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js"></script>
-  <link href="https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -117,7 +117,7 @@
       </div>
     </div>
     <div class="map-box">
-      <div id="map" class="map"></div>
+      <div id="map"></div>
     </div>
   </div>
 
@@ -445,720 +445,734 @@
   </footer>
 
   <script>
-  L.mapbox.accessToken = 'pk.eyJ1IjoiZGFpbHlwZW5uIiwiYSI6ImNpanFueGV4cTAyeWx0b201dXpzeGU3aDEifQ.6V-cf4TqyBJ9Yj9XXjQVJA';
-
-  var geojson = [
-    {
-      type: "FeatureCollection",
-      features: [
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.225566,40.026258]
-          },
-          properties: {
-            title: "Lucky's Last Chance",
-            url: "http://www.34st.com/article/2018/03/luckys-last-chance-dining-guide-food-drink-review-style",
-            address:"4421 Main St, Philadelphia, PA 19127",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
+  var geojson = {
+    type: "FeatureCollection",
+    features: [
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.225566,40.026258]
         },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1647147,39.9484661]
-          },
-          properties: {
-            title: "Maison 208",
-            url: "http://www.34st.com/article/2018/03/maison-208-restauraunt-view-dining-guide-food-drink-style-culture",
-            address:"208 S 13th St, Philadelphia, PA 19107",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1496409,39.9390396]
-          },
-          properties: {
-            title: "Hungry Pigeon",
-            url: "http://www.34st.com/article/2018/03/hungry-pigeon-style-food-drink-review-style-portlandia-dining-guide",
-            address:"743 S 4th St, Philadelphia, PA 19147",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1621611,39.949084]
-          },
-          properties: {
-            title: "Oloroso",
-            url: "http://www.34st.com/article/2018/03/oloroso-restaurant-review-dining-guide-food-and-drink-spanish-tapas-philly",
-            address:"1121 Walnut St, Philadelphia, PA 19107",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1584343,39.9383417]
-          },
-          properties: {
-            title: "Tres Jalapenos",
-            url: "http://www.34st.com/article/2018/03/tres-jalapenos-restauraunt-review-dining-guide-food-and-drink",
-            address:"901 S 8th St, Philadelphia, PA 19147",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1717014,39.9440471]
-          },
-          properties: {
-            title: "Miles Table",
-            url: "http://www.34st.com/article/2018/03/miles-table-dining-guide-food-drink-restaurant-review-style-culture",
-            address:"1620 South St, Philadelphia, PA 19146",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1372507,39.9717131]
-          },
-          properties: {
-            title: "Wm. Mulherin’s Sons",
-            url: "http://www.34st.com/article/2018/03/wm-mulherins-sons-food-drink-restaurant-review-dining-guide-style",
-            address:"1355 N Front St, Philadelphia, PA 19122",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1525716,39.9717488]
-          },
-          properties: {
-            title: "Stock",
-            url: "http://www.34st.com/article/2018/03/stock-dining-guide-food-and-drink-review-style",
-            address:"308 E Girard Ave, Philadelphia, PA 19125",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1563747,39.9417421]
-          },
-          properties: {
-            title: "The Good King Tavern",
-            url: "http://www.34st.com/article/2018/03/the-good-king-tavern-restaurant-review-dining-guide-food-drink-style",
-            address:"614 S 7th St, Philadelphia, PA 19147",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1420836,39.9670007]
-          },
-          properties: {
-            title: "Urban Village Brewing Company",
-            url: "http://www.34st.com/article/2018/03/urban-brewing-village-company-dining-guide-food-drink-review-style",
-            address:"1001 N 2nd St, Philadelphia, PA 19123",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.168288,39.9436675]
-          },
-          properties: {
-            title: "Yeeroh",
-            url: "http://www.34st.com/article/2018/03/yeeroh-dining-guide-food-greek-restaurant-style-drink-gyro-sandwich",
-            address:"1412 South St, Philadelphia, PA 19146",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1762452,39.9522833]
-          },
-          properties: {
-            title: "El Rey",
-            url: "http://www.34st.com/article/2018/03/el-rey-restauraunt-review-dining-guide-food-drink-mexican-philly-center-city",
-            address:"2013 Chestnut St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1726782,39.9451904]
-          },
-          properties: {
-            title: "Keen",
-            url: "http://www.34st.com/article/2018/03/keen-dining-guide-food-drink-review-style",
-            address:"1708 Lombard St, Philadelphia, PA 19146",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1361447,39.9736911]
-          },
-          properties: {
-            title: "Suraya",
-            url: "http://www.34st.com/article/2018/03/suraya-levantine-dining-guide-review-food-and-drink-style",
-            address:"1528 Frankford Ave, Philadelphia, PA 19125",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1704268,39.9612701]
-          },
-          properties: {
-            title: "Andy's Chicken",
-            url: "http://www.34st.com/article/2018/03/andys-chicken-review-dining-guide-restaurant-style-food-and-drink",
-            address:"2108 South St, Philadelphia, PA 19146",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1367409,39.9691947]
-          },
-          properties: {
-            title: "Root",
-            url: "http://www.34st.com/article/2018/03/root-restaurant-and-wine-bar-dining-guide-food-drink-review-style",
-            address:"1206 Frankford Ave, Philadelphia, PA 19125",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2107869,39.9535726]
-          },
-          properties: {
-            title: "Bernie's Restaurant",
-            url: "http://www.34st.com/article/2018/03/bernie-restauraunt-review-dining-guide-food-and-drink-style",
-            address:"3432 Sansom St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1996367,39.9552571]
-          },
-          properties: {
-            title: "Ochatto Hot Pot",
-            url: "http://www.34st.com/article/2018/03/ochatto-hot-pot-dining-guide-food-drink-style",
-            address:"3717 Chestnut St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1728733,39.9508167]
-          },
-          properties: {
-            title: "The Love.",
-            url: "http://www.34st.com/article/2018/03/the-love-dining-guide-food-drink-review-style",
-            address:"130 S 18th St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2034597,39.9542901]
-          },
-          properties: {
-            title: "City Tap House",
-            url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
-            address:"3925 Walnut St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1947928,39.9534686]
-          },
-          properties: {
-            title: "New Deck Tavern",
-            url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
-            address:"3408 Sansom St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1688323,39.9485936]
-          },
-          properties: {
-            title: "Misconduct Tavern",
-            url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
-            address:"1511 Locust St, Philadelphia, PA 19102",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1707054,39.9500824]
-          },
-          properties: {
-            title: "Alma de Cuba",
-            url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
-            address:"1623 Walnut St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1922288,39.954277]
-          },
-          properties: {
-            title: "Co-Op",
-            url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
-            address:"20 S 33rd St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1643347,39.9477856]
-          },
-          properties: {
-            title: "Little Nonna's",
-            url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
-            address:"1234 Locust St, Philadelphia, PA 19107",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1763596,39.9484133]
-          },
-          properties: {
-            title: "The Bakeshop on 20th",
-            url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
-            address:"269 S 20th St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1770846,39.9520341]
-          },
-          properties: {
-            title: "Butcher Bar",
-            url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
-            address:"2034 Chestnut St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2051809,39.9535535]
-          },
-          properties: {
-            title: "Hip City Veg",
-            url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
-            address:"214 S 40th St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2004291,39.9510222]
-          },
-          properties: {
-            title: "Gia Pronto",
-            url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
-            address:"3716 Spruce St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.194285,39.9528195]
-          },
-          properties: {
-            title: "Magic Carpet",
-            url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
-            address:"34th and Walnut Streets",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2037628,39.9542768]
-          },
-          properties: {
-            title: "sweetgreen",
-            url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
-            address:"3925 Walnut St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2025727,39.9552869]
-          },
-          properties: {
-            title: "Thai Singha House",
-            url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
-            address:"3906B Chestnut St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2138004,39.9541696]
-          },
-          properties: {
-            title: "Abyssina",
-            url: "http://www.34st.com/article/2018/03/ethiopian-food-roundup-dining-guide-restaurant-review-food-and-drink",
-            address:"229 S 45th St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2126541,39.956844]
-          },
-          properties: {
-            title: "Kaffa Crossing",
-            url: "http://www.34st.com/article/2018/03/ethiopian-food-roundup-dining-guide-restaurant-review-food-and-drink",
-            address:"4423 Chestnut St, Philadelphia, PA 19104",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1514984,39.94156]
-          },
-          properties: {
-            title: "Jim's Steaks",
-            url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
-            address:"400 South St, Philadelphia, PA 19147",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1509443,39.9141073]
-          },
-          properties: {
-            title: "Tony Luke's",
-            url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
-            address:"39 E Oregon Ave, Philadelphia, PA 19148",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2081764,40.0294825]
-          },
-          properties: {
-            title: "Dalessandro's Steaks",
-            url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
-            address:"600 Wendover St, Philadelphia, PA 19128",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2083925,40.0291874]
-          },
-          properties: {
-            title: "Chubby's",
-            url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
-            address:"5826 Henry Ave, Philadelphia, PA 19128",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1614239,39.933195]
-          },
-          properties: {
-            title: "Pat's King of Steaks",
-            url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
-            address:"1237 E Passyunk Ave, Philadelphia, PA 19147",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1610281,39.9338281]
-          },
-          properties: {
-            title: "Geno's",
-            url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
-            address:"1219 S 9th St, Philadelphia, PA 19147",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2155228,39.9491454]
-          },
-          properties: {
-            title: "Ice Cave",
-            url: "http://www.34st.com/article/2018/03/round-up-of-baltimore-avenue-dining-guide-review-food-drink-style",
-            address:"4507 Baltimore Ave, Philadelphia, PA 19143",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2156881,39.9483286]
-          },
-          properties: {
-            title: "Dottie's Donuts",
-            url: "http://www.34st.com/article/2018/03/round-up-of-baltimore-avenue-dining-guide-review-food-drink-style",
-            address:"4529 Springfield Ave, Philadelphia, PA 19143",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.2248924,39.9479874]
-          },
-          properties: {
-            title: "Satellite Café",
-            url: "http://www.34st.com/article/2018/03/round-up-of-baltimore-avenue-dining-guide-review-food-drink-style",
-            address:"701 S 50th Street, Philadelphia, PA 19143",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1632228,39.9504266]
-          },
-          properties: {
-            title: "Porta",
-            url: "http://www.34st.com/article/2018/03/the-classy-21st-birthday-celebration-dining-guide-food-drink-style",
-            address:"1216 Chestnut St, Philadelphia, PA 19107",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1760602,39.9518873]
-          },
-          properties: {
-            title: "1 Tipping Place",
-            url: "http://www.34st.com/article/2018/03/the-classy-21st-birthday-celebration-dining-guide-food-drink-style",
-            address:"2006 Chestnut St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
-        },
-        {
-          type: "Feature",
-          geometry: {
-            type: "Point",
-            coordinates: [-75.1759631,39.952658]
-          },
-          properties: {
-            title: "Ranstead Room",
-            url: "http://www.34st.com/article/2018/03/the-classy-21st-birthday-celebration-dining-guide-food-drink-style",
-            address:"2013 Ranstead St, Philadelphia, PA 19103",
-            "marker-color": "#326522",
-            "marker-size": "large"
-          }
+        properties: {
+          title: "Lucky's Last Chance",
+          url: "http://www.34st.com/article/2018/03/luckys-last-chance-dining-guide-food-drink-review-style",
+          address:"4421 Main St, Philadelphia, PA 19127",
+          "marker-color": "#326522",
+          "marker-size": "large"
         }
-      ]
-    }
-  ];
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1647147,39.9484661]
+        },
+        properties: {
+          title: "Maison 208",
+          url: "http://www.34st.com/article/2018/03/maison-208-restauraunt-view-dining-guide-food-drink-style-culture",
+          address:"208 S 13th St, Philadelphia, PA 19107",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1496409,39.9390396]
+        },
+        properties: {
+          title: "Hungry Pigeon",
+          url: "http://www.34st.com/article/2018/03/hungry-pigeon-style-food-drink-review-style-portlandia-dining-guide",
+          address:"743 S 4th St, Philadelphia, PA 19147",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1621611,39.949084]
+        },
+        properties: {
+          title: "Oloroso",
+          url: "http://www.34st.com/article/2018/03/oloroso-restaurant-review-dining-guide-food-and-drink-spanish-tapas-philly",
+          address:"1121 Walnut St, Philadelphia, PA 19107",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1584343,39.9383417]
+        },
+        properties: {
+          title: "Tres Jalapenos",
+          url: "http://www.34st.com/article/2018/03/tres-jalapenos-restauraunt-review-dining-guide-food-and-drink",
+          address:"901 S 8th St, Philadelphia, PA 19147",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1717014,39.9440471]
+        },
+        properties: {
+          title: "Miles Table",
+          url: "http://www.34st.com/article/2018/03/miles-table-dining-guide-food-drink-restaurant-review-style-culture",
+          address:"1620 South St, Philadelphia, PA 19146",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1372507,39.9717131]
+        },
+        properties: {
+          title: "Wm. Mulherin’s Sons",
+          url: "http://www.34st.com/article/2018/03/wm-mulherins-sons-food-drink-restaurant-review-dining-guide-style",
+          address:"1355 N Front St, Philadelphia, PA 19122",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1525716,39.9717488]
+        },
+        properties: {
+          title: "Stock",
+          url: "http://www.34st.com/article/2018/03/stock-dining-guide-food-and-drink-review-style",
+          address:"308 E Girard Ave, Philadelphia, PA 19125",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1563747,39.9417421]
+        },
+        properties: {
+          title: "The Good King Tavern",
+          url: "http://www.34st.com/article/2018/03/the-good-king-tavern-restaurant-review-dining-guide-food-drink-style",
+          address:"614 S 7th St, Philadelphia, PA 19147",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1420836,39.9670007]
+        },
+        properties: {
+          title: "Urban Village Brewing Company",
+          url: "http://www.34st.com/article/2018/03/urban-brewing-village-company-dining-guide-food-drink-review-style",
+          address:"1001 N 2nd St, Philadelphia, PA 19123",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.168288,39.9436675]
+        },
+        properties: {
+          title: "Yeeroh",
+          url: "http://www.34st.com/article/2018/03/yeeroh-dining-guide-food-greek-restaurant-style-drink-gyro-sandwich",
+          address:"1412 South St, Philadelphia, PA 19146",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1762452,39.9522833]
+        },
+        properties: {
+          title: "El Rey",
+          url: "http://www.34st.com/article/2018/03/el-rey-restauraunt-review-dining-guide-food-drink-mexican-philly-center-city",
+          address:"2013 Chestnut St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1726782,39.9451904]
+        },
+        properties: {
+          title: "Keen",
+          url: "http://www.34st.com/article/2018/03/keen-dining-guide-food-drink-review-style",
+          address:"1708 Lombard St, Philadelphia, PA 19146",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1361447,39.9736911]
+        },
+        properties: {
+          title: "Suraya",
+          url: "http://www.34st.com/article/2018/03/suraya-levantine-dining-guide-review-food-and-drink-style",
+          address:"1528 Frankford Ave, Philadelphia, PA 19125",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1704268,39.9612701]
+        },
+        properties: {
+          title: "Andy's Chicken",
+          url: "http://www.34st.com/article/2018/03/andys-chicken-review-dining-guide-restaurant-style-food-and-drink",
+          address:"2108 South St, Philadelphia, PA 19146",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1367409,39.9691947]
+        },
+        properties: {
+          title: "Root",
+          url: "http://www.34st.com/article/2018/03/root-restaurant-and-wine-bar-dining-guide-food-drink-review-style",
+          address:"1206 Frankford Ave, Philadelphia, PA 19125",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2107869,39.9535726]
+        },
+        properties: {
+          title: "Bernie's Restaurant",
+          url: "http://www.34st.com/article/2018/03/bernie-restauraunt-review-dining-guide-food-and-drink-style",
+          address:"3432 Sansom St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1996367,39.9552571]
+        },
+        properties: {
+          title: "Ochatto Hot Pot",
+          url: "http://www.34st.com/article/2018/03/ochatto-hot-pot-dining-guide-food-drink-style",
+          address:"3717 Chestnut St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1728733,39.9508167]
+        },
+        properties: {
+          title: "The Love.",
+          url: "http://www.34st.com/article/2018/03/the-love-dining-guide-food-drink-review-style",
+          address:"130 S 18th St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2034597,39.9542901]
+        },
+        properties: {
+          title: "City Tap House",
+          url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
+          address:"3925 Walnut St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1947928,39.9534686]
+        },
+        properties: {
+          title: "New Deck Tavern",
+          url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
+          address:"3408 Sansom St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1688323,39.9485936]
+        },
+        properties: {
+          title: "Misconduct Tavern",
+          url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
+          address:"1511 Locust St, Philadelphia, PA 19102",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1707054,39.9500824]
+        },
+        properties: {
+          title: "Alma de Cuba",
+          url: "http://www.34st.com/article/2018/03/happy-hour-roundup-dining-guide-food-drink-review-alcohol-bars-bar-crawl-cocktails",
+          address:"1623 Walnut St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1922288,39.954277]
+        },
+        properties: {
+          title: "Co-Op",
+          url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
+          address:"20 S 33rd St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1643347,39.9477856]
+        },
+        properties: {
+          title: "Little Nonna's",
+          url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
+          address:"1234 Locust St, Philadelphia, PA 19107",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1763596,39.9484133]
+        },
+        properties: {
+          title: "The Bakeshop on 20th",
+          url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
+          address:"269 S 20th St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1770846,39.9520341]
+        },
+        properties: {
+          title: "Butcher Bar",
+          url: "http://www.34st.com/article/2018/03/warm-dessert-roundup",
+          address:"2034 Chestnut St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2051809,39.9535535]
+        },
+        properties: {
+          title: "Hip City Veg",
+          url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
+          address:"214 S 40th St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2004291,39.9510222]
+        },
+        properties: {
+          title: "Gia Pronto",
+          url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
+          address:"3716 Spruce St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.194285,39.9528195]
+        },
+        properties: {
+          title: "Magic Carpet",
+          url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
+          address:"34th and Walnut Streets",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2037628,39.9542768]
+        },
+        properties: {
+          title: "sweetgreen",
+          url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
+          address:"3925 Walnut St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2025727,39.9552869]
+        },
+        properties: {
+          title: "Thai Singha House",
+          url: "http://www.34st.com/article/2018/03/salad-round-up-dining-guide-2018-review-lunch-university-city-food",
+          address:"3906B Chestnut St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2138004,39.9541696]
+        },
+        properties: {
+          title: "Abyssina",
+          url: "http://www.34st.com/article/2018/03/ethiopian-food-roundup-dining-guide-restaurant-review-food-and-drink",
+          address:"229 S 45th St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2126541,39.956844]
+        },
+        properties: {
+          title: "Kaffa Crossing",
+          url: "http://www.34st.com/article/2018/03/ethiopian-food-roundup-dining-guide-restaurant-review-food-and-drink",
+          address:"4423 Chestnut St, Philadelphia, PA 19104",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1514984,39.94156]
+        },
+        properties: {
+          title: "Jim's Steaks",
+          url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
+          address:"400 South St, Philadelphia, PA 19147",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1509443,39.9141073]
+        },
+        properties: {
+          title: "Tony Luke's",
+          url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
+          address:"39 E Oregon Ave, Philadelphia, PA 19148",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2081764,40.0294825]
+        },
+        properties: {
+          title: "Dalessandro's Steaks",
+          url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
+          address:"600 Wendover St, Philadelphia, PA 19128",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2083925,40.0291874]
+        },
+        properties: {
+          title: "Chubby's",
+          url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
+          address:"5826 Henry Ave, Philadelphia, PA 19128",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1614239,39.933195]
+        },
+        properties: {
+          title: "Pat's King of Steaks",
+          url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
+          address:"1237 E Passyunk Ave, Philadelphia, PA 19147",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1610281,39.9338281]
+        },
+        properties: {
+          title: "Geno's",
+          url: "http://www.34st.com/article/2018/03/cheesesteaks-a-philadelphia-love-story-dining-guide-food-drink-style",
+          address:"1219 S 9th St, Philadelphia, PA 19147",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2155228,39.9491454]
+        },
+        properties: {
+          title: "Ice Cave",
+          url: "http://www.34st.com/article/2018/03/round-up-of-baltimore-avenue-dining-guide-review-food-drink-style",
+          address:"4507 Baltimore Ave, Philadelphia, PA 19143",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2156881,39.9483286]
+        },
+        properties: {
+          title: "Dottie's Donuts",
+          url: "http://www.34st.com/article/2018/03/round-up-of-baltimore-avenue-dining-guide-review-food-drink-style",
+          address:"4529 Springfield Ave, Philadelphia, PA 19143",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.2248924,39.9479874]
+        },
+        properties: {
+          title: "Satellite Café",
+          url: "http://www.34st.com/article/2018/03/round-up-of-baltimore-avenue-dining-guide-review-food-drink-style",
+          address:"701 S 50th Street, Philadelphia, PA 19143",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1632228,39.9504266]
+        },
+        properties: {
+          title: "Porta",
+          url: "http://www.34st.com/article/2018/03/the-classy-21st-birthday-celebration-dining-guide-food-drink-style",
+          address:"1216 Chestnut St, Philadelphia, PA 19107",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1760602,39.9518873]
+        },
+        properties: {
+          title: "1 Tipping Place",
+          url: "http://www.34st.com/article/2018/03/the-classy-21st-birthday-celebration-dining-guide-food-drink-style",
+          address:"2006 Chestnut St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      },
+      {
+        type: "Feature",
+        geometry: {
+          type: "Point",
+          coordinates: [-75.1759631,39.952658]
+        },
+        properties: {
+          title: "Ranstead Room",
+          url: "http://www.34st.com/article/2018/03/the-classy-21st-birthday-celebration-dining-guide-food-drink-style",
+          address:"2013 Ranstead St, Philadelphia, PA 19103",
+          "marker-color": "#326522",
+          "marker-size": "large"
+        }
+      }
+    ]
+  };
 
-  var map = L.mapbox.map('map', '', {attributionControl: false})
-  .setView([39.9483286, -75.2156881], 13);
-  map.zoomControl.setPosition('topright');
+  var popups = [];
 
-  var locations = L.mapbox.featureLayer().addTo(map);
-  locations.setGeoJSON(geojson);
-  L.mapbox.styleLayer('mapbox://styles/dailypenn/cijqnygqv005y94kqwb3xs46l').addTo(map);
-
-  var credits = L.control.attribution().addTo(map);
-  credits.addAttribution('©2018 The Daily Pennsylvanian. Maps © Mapbox © OpenStreetMaps');
-
-  function setActive(el) {
-    var siblings = listings.getElementsByTagName('div');
-    for (var i = 0; i < siblings.length; i++) {
-      siblings[i].className = siblings[i].className
-      .replace(/active/, '').replace(/\s\s*$/, '');
-    }
-    el.className += ' active';
+  function clearPopups() {
+    popups.forEach(function(el) {
+      el.remove();
+    });
   }
 
-  locations.eachLayer(function(locale) {
-    // Shorten locale.feature.properties to just `prop` so we're not
-    // writing this long form over and over again.
-    var prop = locale.feature.properties;
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2pmYmN2dDB4MWNoYjRlcTdjM2Y3bGpzZyJ9.1m44PhD4VmqEhKhI4FhPKA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/dpwebdev/cjfbcjxzi69w52rk936tb9lyu',
+    center: [-75.2156881, 39.9483286],
+    zoom: 13,
+    scrollZoom: false
+  });
 
-    // Each marker on the map.
-    var popup = '<h4>' + prop.title + '</h4><a href="' + prop.url + '" target="_blank">Read more »</a>';
+  map.addControl(new mapboxgl.NavigationControl());
 
+  // populate map
+  map.on('load', function() {
+    map.addSource('data', {
+      type: 'geojson',
+      data: geojson
+    });
+
+    map.addLayer({
+      "id": "restaurants",
+      "type": "circle",
+      "source": "data"
+    });
+  });
+
+  // add restaurants to sidebar
+  for (var i in geojson.features) {
+    var prop = geojson.features[i].properties;
     var listing = listings.appendChild(document.createElement('div'));
     listing.className = 'item';
+    listing.position = i;
 
-    var link = listing.appendChild(document.createElement('a'));
-    link.href = '#';
-    link.className = 'title';
-
-    link.innerHTML = prop.title;
+    var title = listing.appendChild(document.createElement('h6'));
+    title.className = 'title';
+    title.innerHTML = prop.title;
 
     var details = listing.appendChild(document.createElement('div'));
     details.innerHTML = '<i>'+ prop.address +'</i>';
 
-    link.onclick = function() {
-      setActive(listing);
-      // When a menu item is clicked, animate the map to center
-      // its associated locale and open its popup.
-      map.setView(locale.getLatLng(), 16);
-      locale.openPopup();
-      return false;
-    };
+    // add click event listener for listings
+    listing.addEventListener('click', function(e) {
+      var feature = geojson.features[this.position];
+      var text = '<h4>' + feature.properties.title + '</h4><a href="' +
+                 feature.properties.url + '" target="_blank">Read more »</a>';
+      var coordinates = feature.geometry.coordinates;
 
-    // Marker interaction
-    locale.on('click', function(e) {
-      // Set active the markers associated listing.
-      setActive(listing);
+      clearPopups();
+      map.setCenter(coordinates, 16);
+      var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
+      popups.push(popup);
     });
+  }
 
-    popup += '</div>';
-    locale.bindPopup(popup);
+  map.on('click', 'restaurants', function (e) {
+    var coordinates = e.features[0].geometry.coordinates.slice();
+    var prop = e.features[0].properties;
+    var text = '<h4>' + prop.title + '</h4><a href="' + prop.url + '" target="_blank">Read more »</a>';
 
-    map.scrollWheelZoom.disable();
+    var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
+    popups.push(popup);
   });
 
+  // Change the cursor to a pointer when the mouse is over the places layer.
+  map.on('mouseenter', 'restaurants', function () {
+    map.getCanvas().style.cursor = 'pointer';
+  });
+
+  // Change it back to a pointer when it leaves.
+  map.on('mouseleave', 'restaurants', function () {
+    map.getCanvas().style.cursor = '';
+  });
   </script>
 </body>
