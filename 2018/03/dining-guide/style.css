@@ -48,7 +48,13 @@ img {
   margin: 20px auto 10px;
 }
 
-a, a:hover {
+a {
+  color: #326522;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a5c639;
   text-decoration: none;
 }
 
@@ -105,14 +111,6 @@ hr {
   background-color: #e8e8de;
 }
 
-.item a {
-  color: #326522;
-}
-
-.item a:hover {
-  color: #a5c639;
-}
-
 .item:not(:last-of-type) {
   margin-bottom: 10px;
   padding-bottom: 10px;
@@ -136,7 +134,7 @@ hr {
 }
 
 .image-row a {
-  color: black;
+  color: #000;
 }
 
 .street-link {
