@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Dining Guide Spring 2018",
+      "author": "Web Dev: Jamie Tomlinson, Daniel Salib",
+      "section": "guides",
+      "date": "March 2018",
+      "description": "Your favorite issue is back with a mouthwatering vengeance! Inside you'll find your new favorite off–campus happy hour, tips on how to meal prep, and more. But don't read when hungry. You've been warned.",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2018/03/dining-guide/",
+      "image": "https://snworksceo.imgix.net/dpn-34s/64c957e2-08b3-499d-8330-edc882eb85a3.sized-1000x1000.png",
+      "alt": "dining guide spring 2018"
+    },
+    {
       "title": "Love Issue 2018",
       "author": "Web Dev: Jamie Tomlinson, Alex Graves",
       "section": "guides",
@@ -21,7 +32,9 @@
       "link": "http://projects.34st.com/2017/12/assault-narratives/",
       "image": "http://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png",
       "alt": "end the silence"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Dining Guide Fall 2017",
       "author": "Web Dev: Jess Peng, Andrew Fischer",
@@ -32,9 +45,7 @@
       "link": "http://projects.34st.com/2017/10/dining-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/5d9cb1de-a1c4-4171-8e2d-2acec48f674c.sized-1000x1000.png",
       "alt": "dining guide fall 2017"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Penn10: Ten of Penn's Most Impressive Seniors",
       "author": "Web Dev: Andrew Fischer",
