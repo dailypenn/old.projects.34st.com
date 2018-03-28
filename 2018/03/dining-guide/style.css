@@ -41,10 +41,11 @@ h5 {
 
 footer {
   text-align: center;
+  margin: 15px;
 }
 
 img {
-  margin: 10px;
+  margin: 20px auto 10px;
 }
 
 a, a:hover {
@@ -55,15 +56,26 @@ p.italics {
   font-style: italic;
 }
 
+hr {
+  width: 1140px;
+  max-width: 100%;
+  margin: 20px auto;
+  border-top: 3px solid #326522;
+}
+
 .intro {
   width: 50%;
   margin: auto;
 }
 
+.map-container {
+  margin-top: 50px;
+}
+
 .map {
   background-repeat: no-repeat;
   background-size: cover;
-  border: black;
+  right: 0;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -71,29 +83,10 @@ p.italics {
   text-align: center;
 }
 
-.gallery-info {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav {
-  background-color: #604856;
-  text-align: center;
-  justify-content: center;
-}
-
 .street-logo {
   margin: auto;
   height: 50px;
   padding: 10px;
-}
-
-hr {
-  margin: 0px 0;
-  border-top: 3px solid #604856;
 }
 
 .featured {
@@ -133,17 +126,13 @@ hr {
 .img-top {
   height: 400px;
   width: 100%;
-  margin: 0 auto 10px;
+  margin: 20px auto 10px;
 }
 
 .img-square {
   height: 300px;
   width: 100%;
-  margin: 0 auto 10px;
-}
-
-.image-row {
-  margin: 20px;
+  margin: 20px auto 10px;
 }
 
 .image-row a {
@@ -160,8 +149,7 @@ hr {
 }
 
 .lg-underline {
-  width: 31%;
-
+  width: 33%;
 }
 
 .underline2 {
@@ -188,4 +176,25 @@ hr {
 .title-see-more a {
   text-decoration: none;
   color: #326522;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+  }
+
+  .img-top {
+    height: 300px;
+  }
+
+  .listing-box {
+    /* display: none; */
+    position: relative;
+  }
+
+  .listings {
+    width: 100%;
+    height: calc(33vh - 40px);
+    top: 67vh;
+  }
 }
