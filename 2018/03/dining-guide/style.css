@@ -119,12 +119,12 @@ hr {
 
 .item {
   cursor: pointer;
+  border-top: 1px solid #326522;
+  padding-top: 15px;
 }
 
 .item:not(:last-of-type) {
   margin-bottom: 10px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #326522;
 }
 
 .listing-box {
