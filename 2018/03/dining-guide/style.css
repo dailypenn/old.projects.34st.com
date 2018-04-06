@@ -1,30 +1,98 @@
-.map {
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: black;
+@font-face {
+font-family:"Bodoni";
+src: url("https://use.typekit.net/af/1db0a1/000000000000000000010b16/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1db0a1/000000000000000000010b16/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1db0a1/000000000000000000010b16/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-style: normal;
+font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url("https://use.typekit.net/af/6756a2/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/6756a2/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/6756a2/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-style: italic;
+  font-weight: 400;
+}
+
+body {
+  font-family: 'Proxima Nova';
+}
+
+h1, h2, h3 {
+  font-family: 'Bodoni';
+}
+
+h1, h2 {
+  color: #326522;
+}
+
+h5, h6 {
+  color: #838580;
+}
+
+h5 {
+  text-transform: uppercase;
+}
+
+h6.title {
+  color: #326522;
+}
+
+footer {
+  text-align: center;
+  margin: 15px;
+}
+
+img {
+  margin: 20px auto 10px;
+}
+
+a, a:hover, a:focus {
+  color: #326522;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: #a5c639;
+}
+
+p.italics {
+  font-style: italic;
+}
+
+hr {
+  width: 1140px;
+  max-width: 100%;
+  margin: 20px auto;
+  border-top: 3px solid #326522;
+}
+
+.intro {
+  width: 50%;
+  margin: auto;
+}
+
+.map-container {
+  margin-top: 50px;
+}
+
+#map {
   width: 100%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
-.map-box{
-    padding-left: 0;
+#map.mapboxgl-map {
+  font-family: 'Proxima Nova';
 }
 
-.gallery-info {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav {
-  background-color: #604856;
-  text-align: center;
-  justify-content: center;
+#map.mapboxgl-map h4 {
+  font-family: 'Bodoni';
+  margin-top: 10px;
 }
 
 .street-logo {
@@ -33,23 +101,106 @@
   padding: 10px;
 }
 
-hr {
-  margin: 0px 0;
-  border-top: 3px solid #604856;
-}
-
 .featured {
-  width: 50%;
   padding-top: 10px;
   margin: auto;
   text-align: center;
 }
-.listings{
+
+.listings {
+  width: 33%;
   height: 100vh;
-  padding-left: 5px;
-  padding-right: 15px;
+  position: absolute;
+  z-index: 1000;
+  padding: 15px;
   overflow-y: scroll;
+  background-color: #e8e8de;
 }
-.listing-box{
+
+.item {
+  cursor: pointer;
+  border-top: 1px solid #326522;
+  padding-top: 15px;
+}
+
+.item:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.listing-box {
   padding-right: 0;
+}
+
+.img-top {
+  height: 400px;
+  width: 100%;
+  margin: 20px auto 10px;
+}
+
+.img-square {
+  height: 300px;
+  width: 100%;
+  margin: 20px auto 10px;
+}
+
+.image-row a {
+  color: #000;
+}
+
+.street-link {
+  margin: 30px 0 0 30px;
+}
+
+.lg-underline, .underline2, .underline3 {
+  border-top: 2px solid #326522;
+  margin: 20px auto;
+}
+
+.lg-underline {
+  width: 33%;
+}
+
+.underline2 {
+  width: 10%;
+}
+
+.underline3 {
+  width: 15%;
+}
+
+.food-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title-see-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #326522;
+}
+
+.title-see-more a {
+  text-decoration: none;
+  color: #326522;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+  }
+
+  .img-top {
+    height: 300px;
+  }
+
+  .listing-box {
+    position: relative;
+  }
+
+  .listings {
+    width: 100%;
+    height: 33vh;
+    top: 67vh;
+  }
 }
