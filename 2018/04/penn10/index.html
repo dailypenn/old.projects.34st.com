@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penn10 | 34st Magazine</title>
+  <meta name="description" content="Penn10" />
+  <meta name="author" content="34st Magazine" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" type="text/css">
+</head>
+
+<body>
+<div class="intro">
+    <!-- <img class="img-fluid intro-img" src = "https://media.thetab.com/blogs.dir/93/files/2015/10/Love-sculpture-university-of-pennsylvania.jpg"> -->
+  <div class="centered">
+    <h1>Penn10</h1>
+  </div>
+</div>
+
+<div class="content">
+  <div id="slider1" class="slider">
+    <div class="slider-item">
+      <div class="slider-img">
+      <img class="img-fluid" src="img/person1.png">
+    </div>
+      <p>Name</p>
+    </div>
+    <div class="slider-item">
+      <div class="slider-img">
+      <img class="img-fluid" src="img/person1.png">
+    </div>
+      <p>Hi</p>
+    </div>
+    <div class="slider-item">
+      <div class="slider-img">
+      <img class="img-fluid" src="img/person1.png">
+    </div>
+      <p>Hi</p>
+    </div>
+    <div class="slider-item">
+      <div class="slider-img">
+      <img class="img-fluid" src="img/person1.png">
+    </div>
+      <p>Hi</p>
+    </div>
+  </div>
+</div>
+
+
+<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        centerPadding: "100px"
+      });
+    });
+  </script>
+</body>
