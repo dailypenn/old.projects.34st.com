@@ -1,16 +1,16 @@
 /* .header-img{
-  height: auto;
-  width: 100vw;
+height: auto;
+width: 100vw;
 } */
 
 .intro{
-    text-align: center;
-    color: white;
-    height: 100vh;
-    width: auto;
-    background-image: url("https://media.thetab.com/blogs.dir/93/files/2015/10/Love-sculpture-university-of-pennsylvania.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  text-align: center;
+  color: white;
+  height: 100vh;
+  width: auto;
+  background-image: url("https://media.thetab.com/blogs.dir/93/files/2015/10/Love-sculpture-university-of-pennsylvania.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro img{
@@ -20,38 +20,93 @@
 
 .content{
   padding-top: 20px;
-  padding-left: 30px;
-  padding-right: 30px;
   background: #555555;
 }
 
 .slider{
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .slider-item{
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .slider-img{
+  position: relative;
   background: rgba(0,0,0,0.8);
+  text-align: center;
 }
 
-.slider-img img{
+.slider-img {
   transition: ease-in-out .3s;
 }
 
-.slider-img img:hover{
+.slider-img:hover img{
   transition: ease-in-out .3s;
   opacity: .5;
 }
 
+.nav {
+  background-color: #604856;
+  text-align: center;
+}
+
+.street-link {
+  margin: auto;
+}
+
+.street-logo {
+  margin: auto;
+  height: 50px;
+  padding: 10px;
+}
+
+/* .img-btn{
+position: absolute;
+opacity: 1;
+} */
+
+.img-btn {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.slider-img:hover .img-btn{
+  opacity: 1;
+}
+
 
 .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 480px) {
+
+  .content{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .slider{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .slider-item{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: auto;
+  }
+
 }

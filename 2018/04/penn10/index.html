@@ -15,55 +15,91 @@
 </head>
 
 <body>
-<div class="intro">
+
+  <div class="nav">
+    <a target="_blank" href="http://www.34st.com" class="street-link">
+      <img class="street-logo" src="https://snworksceo.imgix.net/dpn-34s/07270ff9-d091-419a-a52c-fbc4f10fa87b.sized-1000x1000.png?w=200" alt="34th Street">
+    </a>
+  </div>
+
+  <div class="intro">
     <!-- <img class="img-fluid intro-img" src = "https://media.thetab.com/blogs.dir/93/files/2015/10/Love-sculpture-university-of-pennsylvania.jpg"> -->
-  <div class="centered">
-    <h1>Penn10</h1>
-  </div>
-</div>
-
-<div class="content">
-  <div id="slider1" class="slider">
-    <div class="slider-item">
-      <div class="slider-img">
-      <img class="img-fluid" src="img/person1.png">
-    </div>
-      <p>Name</p>
-    </div>
-    <div class="slider-item">
-      <div class="slider-img">
-      <img class="img-fluid" src="img/person1.png">
-    </div>
-      <p>Hi</p>
-    </div>
-    <div class="slider-item">
-      <div class="slider-img">
-      <img class="img-fluid" src="img/person1.png">
-    </div>
-      <p>Hi</p>
-    </div>
-    <div class="slider-item">
-      <div class="slider-img">
-      <img class="img-fluid" src="img/person1.png">
-    </div>
-      <p>Hi</p>
+    <div class="centered">
+      <h1>Penn10</h1>
     </div>
   </div>
-</div>
+
+  <div class="content">
+    <div id="slider1" class="slider">
+      <div class="slider-item">
+        <div class="slider-img">
+          <img class="img-fluid" src="img/person1.png">
+          <button type="button" class="btn btn-outline-primary img-btn">Read my article!</button>
+        </div>
+        <p>First</p>
+      </div>
+      <div class="slider-item">
+        <div class="slider-img">
+          <img class="img-fluid" src="img/person1.png">
+          <button type="button" class="btn btn-outline-primary img-btn">Read my article!</button>
+        </div>
+        <p>Second</p>
+      </div>
+      <div class="slider-item">
+        <div class="slider-img">
+          <img class="img-fluid" src="img/person1.png">
+          <button type="button" class="btn btn-outline-primary img-btn">Read my article!</button>
+        </div>
+        <p>Third</p>
+      </div>
+      <div class="slider-item">
+        <div class="slider-img">
+          <img class="img-fluid" src="img/person1.png">
+          <button type="button" class="btn btn-outline-primary img-btn">Read my article!</button>
+        </div>
+        <p>Fourth</p>
+      </div>
+    </div>
+  </div>
 
 
-<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type ="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-<script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        centerPadding: "100px"
-      });
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('.slider').slick({
+      centerMode: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      centerPadding: "50px",
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false
+          }
+        }
+      ]
     });
+  });
+  $(window).resize(function() {
+    $('.slider').slick('resize');
+  });
+
+  $(window).on('orientationchange', function() {
+    $('.slider').slick('resize');
+  });
   </script>
 </body>
