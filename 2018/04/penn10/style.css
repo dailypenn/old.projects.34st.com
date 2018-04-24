@@ -4,15 +4,15 @@
   text-align: center;
   color: white;
   height: 100vh;
-  width: auto;
-  background-image: url("https://media.thetab.com/blogs.dir/93/files/2015/10/Love-sculpture-university-of-pennsylvania.jpg");
+  width: 100vw;
+  background-image: url("https://snworksceo.imgix.net/dpn-34s/8da176ad-c561-4eb1-be15-28fd0f103912.sized-1000x1000.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .intro h1{
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 300;
+  font-size: 80px;
 }
 .intro img{
   max-width: 100vw;
@@ -22,6 +22,12 @@
 .content{
   padding-top: 20px;
   background: #FFF;
+}
+
+.desc-text{
+  margin: auto;
+  text-align: center;
+  width: 50%;
 }
 
 .slider{
@@ -66,7 +72,7 @@
 }
 
 .nav {
-  background-color: #000;
+  background-color: #4BBFBE;
   text-align: center;
 }
 
@@ -120,7 +126,7 @@ footer{
 }
 .centered {
   position: absolute;
-  top: 50%;
+  top: 140px;
   left: 50%;
   transform: translate(-50%, -50%);
 }
