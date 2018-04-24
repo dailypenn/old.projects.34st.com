@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Penn10",
+      "author": "Web Dev: Daniel Salib; Design: Julia Schorr",
+      "section": "Projects",
+      "date": "April 2018",
+      "description": "",
+      "sponsored": false,
+      "link": "http://projects.34st.com/2018/03/dining-guide/",
+      "image": "https://snworksceo.imgix.net/dpn-34s/64c957e2-08b3-499d-8330-edc882eb85a3.sized-1000x1000.png",
+      "alt": "penn10"
+    },
+    {
       "title": "Dining Guide Spring 2018",
       "author": "Web Dev: Jamie Tomlinson, Daniel Salib",
       "section": "guides",
@@ -21,7 +32,9 @@
       "link": "http://projects.34st.com/2018/02/valentines/",
       "image": "https://snworksceo.imgix.net/dpn/47468b32-5147-44d5-a975-078bc06bed20.sized-1000x1000.png",
       "alt": "love issue 2018"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "End the Silence: Sexual Assault Survivors at Penn Share Their Stories",
       "author": "Web Dev: Brady Africk, Andrew Fischer, Alex Graves",
@@ -32,9 +45,7 @@
       "link": "http://projects.34st.com/2017/12/assault-narratives/",
       "image": "http://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png",
       "alt": "end the silence"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Dining Guide Fall 2017",
       "author": "Web Dev: Jess Peng, Andrew Fischer",
