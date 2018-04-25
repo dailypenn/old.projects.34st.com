@@ -1,15 +1,15 @@
 {
   "featured": [
     {
-      "title": "Penn10",
-      "author": "Web Dev: Daniel Salib; Design: Julia Schorr",
+      "title": "Penn 10: Penn’s younger, cooler, 30 under 30",
+      "author": "Web Dev: Daniel Salib",
       "section": "Projects",
       "date": "April 2018",
-      "description": "",
+      "description": "Penn 10 is a collection of student profiles spotlighting members of the senior class that have done incredible work during their time here.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2018/03/dining-guide/",
-      "image": "https://snworksceo.imgix.net/dpn-34s/64c957e2-08b3-499d-8330-edc882eb85a3.sized-1000x1000.png",
-      "alt": "penn10"
+      "link": "http://projects.34st.com/2018/04/penn10/",
+      "image": "https://snworksceo.imgix.net/dpn-34s/0f8db408-cea2-4b2a-9be8-79c148e54e09.sized-1000x1000.png",
+      "alt": "penn10 2018"
     },
     {
       "title": "Dining Guide Spring 2018",

@@ -3,11 +3,20 @@
 h1, h2, h3, p {
   font-family: "nimbus-sans", sans-serif;
   font-weight: 300;
+  margin: 0;
+  color: #000;
 }
 
 h1 {
-  padding-top: 50px;
-  font-size: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 hr {
@@ -39,19 +48,27 @@ footer p {
 }
 
 .intro {
-  text-align: center;
-  color: white;
   height: calc(100vh - 50px);
   width: 100vw;
-  background-image: url("https://snworksceo.imgix.net/dpn-34s/8da176ad-c561-4eb1-be15-28fd0f103912.original.png?w=1600");
+  background-image: url('https://s3.amazonaws.com/snwceomedia/dpn-34s/9618e731-311b-4aa9-ab10-b39b07b274b9.original.png?w=1600');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 25% top;
 }
 
-.content {
-  padding-top: 20px;
-  background: #FFF;
+.heading {
+  position: absolute;
+  right: 150px;
+  top: 25%;
+  text-align: right;
+}
+
+.heading h2 {
+  margin-top: -20px;
+}
+
+.header-img {
+  width: 100%;
 }
 
 .desc-text {
@@ -94,12 +111,8 @@ footer p {
   font-size: 24px;
 }
 
-.slick-prev:before {
-  color: #000000 !important;
-}
-
-.slick-next:before{
-  color: #000000 !important;
+.slick-prev:before, .slick-next:before {
+  color: #777;
 }
 
 .img-btn {
@@ -125,6 +138,68 @@ footer p {
 
 .slider-img:hover .img-btn {
   opacity: 1;
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+.hidden-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 1700px) {
+  h1 {
+    font-size: 100px;
+  }
+
+  .heading {
+    right: 80px;
+  }
+}
+
+@media screen and (max-width: 1560px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .heading {
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  h1 {
+    font-size: 70px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .heading {
+    right: 40px;
+  }
+
+  .heading h2 {
+    margin-top: -10px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .hidden-mobile {
+    display: none;
+  }
+
+  .hidden-desktop {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
