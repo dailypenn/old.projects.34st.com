@@ -25,11 +25,7 @@ hr {
 
 footer {
   text-align: center;
-  margin: 0 20px;
-}
-
-footer p {
-  margin-top: 15px;
+  margin: 20px;
 }
 
 .nav {
@@ -81,6 +77,10 @@ footer p {
 .slider {
   margin-left: 30px;
   margin-right: 30px;
+}
+
+.slick-slide {
+  outline: none;
 }
 
 .slider-item {
