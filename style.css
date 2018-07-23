@@ -1,33 +1,32 @@
+body {
+  font-family: "pt-serif", serif;
+  font-style: normal;
+}
+
 nav img {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding: 15px 0;
   display: block;
   margin: auto;
   width: 125px;
 }
 
-h1 {
+h1, h2 {
   text-align: center;
-  color: #4BBFBE;
   font-family: "futura-pt", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 72px;
-  padding-top: 65px;
+  margin-top: 85px;
+}
+
+h1 {
+  color: #4BBFBE;
 }
 
 h2 {
-  text-align: center;
-  font-family: "futura-pt", sans-serif;
-  font-style: normal;
-  font-weight: 500;
   font-size: 50px;
-  padding-bottom: 15px;
-}
-
-body {
-  font-family: "pt-serif", serif;
-  font-style: normal;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 hr {
@@ -48,13 +47,13 @@ a:hover, a:active, a:focus {
 footer {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
+  margin-top: 0;
   padding: 15px;
   text-align: center;
 }
 
 footer > hr {
-  padding: 0px;
+  padding: 0;
 }
 
 #info {
@@ -63,42 +62,42 @@ footer > hr {
   color: #999;
   font-style: normal;
   font-size: 20px;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 #featured-tag {
   font-weight: 700;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 #featured-date {
   font-weight: 400;
   text-align: right;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 #tag {
   font-weight: 700;
   padding-top: 15px;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 #all-tag {
   font-weight: 700;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
 #date {
   font-weight: 400;
   text-align: right;
   padding-top: 15px;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 #all-date {
   font-weight: 400;
   text-align: right;
-  padding-right: 0px;
+  padding-right: 0;
 }
 
 #featured-title {
@@ -130,14 +129,18 @@ footer > hr {
   padding-top: 15px;
 }
 
+#articles .row, #featured-main {
+  display: flex;
+  align-items: flex-end;
+}
+
 .row {
-  margin-left: 0px;
-  margin-right: 0px;
-  position: relative;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .row:first-of-type {
-  padding: 0px;
+  padding: 0;
 }
 
 .col-md-6:first-of-type {
@@ -150,21 +153,7 @@ footer > hr {
 }
 
 .col-md-7, .col-md-5 {
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.col-md-5 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
-.col-md-8 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  padding: 15px 15px 0;
 }
 
 ::selection {
@@ -178,16 +167,11 @@ footer > hr {
   }
 
   .row {
-    position: inherit;
-  }
-
-  .col-md-5 {
-    position: inherit;
+    flex-direction: column;
   }
 
   .col-md-8 {
     padding-top: 15px;
-    position: inherit;
   }
 
   .col-md-6:first-of-type {
