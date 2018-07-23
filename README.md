@@ -22,7 +22,7 @@ This must all be done before your page can be considered complete! Check with th
   <meta property="og:image" content="[this should generally be a link from our CMS]">
   <meta property="og:description" content="[description]">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="http://projects.34st.com/[year]/[month]/[project-name]">
+  <meta property="og:url" content="https://projects.34st.com/[year]/[month]/[project-name]">
   ```
   4. Twitter card information: make sure this is all included, and [test it](https://cards-dev.twitter.com/validator) to be sure that it looks like you expect!
   ```HTML
@@ -30,7 +30,7 @@ This must all be done before your page can be considered complete! Check with th
   <meta name="twitter:title" content="[same as page title]">
   <meta name="twitter:image" content="[this should generally be a link from our CMS]">
   <meta name="twitter:description" content="[description, less than 200 characters]">
-  <meta name="twitter:url" content="http://projects.34st.com/[year]/[month]/[project-name]">
+  <meta name="twitter:url" content="https://projects.34st.com/[year]/[month]/[project-name]">
   <meta name="twitter:site" content="@34ST">
   ```
 
