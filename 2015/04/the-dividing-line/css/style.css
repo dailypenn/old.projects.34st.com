@@ -46,7 +46,7 @@ h2 {
 }
 
 blockquote {
-	
+
 	width: 70%;
 	text-align: center;
 	padding-left: 15%;
@@ -60,7 +60,6 @@ footer {
   width: 100wv;
   margin-top: 50px;
   padding-top: 100px;
-  background: url("../assets/flower.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: 50%; }
@@ -131,4 +130,3 @@ footer {
         color: #C43700 !important; }
     .nav-bar .flex-container img {
       padding-top: 130px; }
-
