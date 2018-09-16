@@ -1,15 +1,15 @@
 {
   "featured": [
     {
-      "title": "Penn10",
-      "author": "Web Dev: Daniel Salib; Design: Julia Schorr",
+      "title": "Penn 10: Penn’s younger, cooler, 30 under 30",
+      "author": "Web Dev: Daniel Salib",
       "section": "Projects",
       "date": "April 2018",
-      "description": "Penn 10 is a collection of student profiles spotlighting members of the senior class that have done incredible work during their time here. Earlier this month, we asked you to nominate seniors who embody innovation and excellence. In turn we got 10 students from all corners of Penn, in the lab, on the court, and at the protests.",
+      "description": "Penn 10 is a collection of student profiles spotlighting members of the senior class that have done incredible work during their time here.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2018/03/dining-guide/",
-      "image": "https://snworksceo.imgix.net/dpn-34s/64c957e2-08b3-499d-8330-edc882eb85a3.sized-1000x1000.png",
-      "alt": "penn10"
+      "link": "https://projects.34st.com/2018/04/penn10/",
+      "image": "https://snworksceo.imgix.net/dpn-34s/0f8db408-cea2-4b2a-9be8-79c148e54e09.sized-1000x1000.png",
+      "alt": "penn10 2018"
     },
     {
       "title": "Dining Guide Spring 2018",
@@ -18,7 +18,7 @@
       "date": "March 2018",
       "description": "Your favorite issue is back with a mouthwatering vengeance! Inside you'll find your new favorite off–campus happy hour, tips on how to meal prep, and more. But don't read when hungry. You've been warned.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2018/03/dining-guide/",
+      "link": "https://projects.34st.com/2018/03/dining-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/64c957e2-08b3-499d-8330-edc882eb85a3.sized-1000x1000.png",
       "alt": "dining guide spring 2018"
     },
@@ -29,7 +29,7 @@
       "date": "February 2018",
       "description": "For Valentine's Day this year, we wanted to collect stories that gestured at the reality of love as we feel it: messy, sticky, weird, and something we can't claim to fully understand.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2018/02/valentines/",
+      "link": "https://projects.34st.com/2018/02/valentines/",
       "image": "https://snworksceo.imgix.net/dpn/47468b32-5147-44d5-a975-078bc06bed20.sized-1000x1000.png",
       "alt": "love issue 2018"
     }
@@ -42,8 +42,8 @@
       "date": "December 2017",
       "description": "Content warning: sexual assault and violence | Sexual assault survivors at Penn share their stories.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2017/12/assault-narratives/",
-      "image": "http://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png",
+      "link": "https://projects.34st.com/2017/12/assault-narratives/",
+      "image": "https://projects.34st.com/2017/12/assault-narratives/img/end-the-silence.png",
       "alt": "end the silence"
     },
     {
@@ -53,7 +53,7 @@
       "date": "October 2017",
       "description": "Step outside the Penn bubble and see what one of America's greatest food cities has to offer.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2017/10/dining-guide/",
+      "link": "https://projects.34st.com/2017/10/dining-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/5d9cb1de-a1c4-4171-8e2d-2acec48f674c.sized-1000x1000.png",
       "alt": "dining guide fall 2017"
     },
@@ -64,7 +64,7 @@
       "date": "April 2017",
       "description": "Read about ten of Penn's extraordinary seniors, brought to you by 34th Street and made possible by Penn Alumni.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2017/04/penn10/",
+      "link": "https://projects.34st.com/2017/04/penn10/",
       "image": "https://s3.amazonaws.com/media.dpn/58893_penn10f.png",
       "alt": "penn10"
     },
@@ -75,7 +75,7 @@
       "date": "April 2017",
       "description": "Read this spring's shoutouts!",
       "sponsored": false,
-      "link": "http://projects.34st.com/2017/04/shoutouts/",
+      "link": "https://projects.34st.com/2017/04/shoutouts/",
       "image": "https://s3.amazonaws.com/media.dpn/59031_shoutoutsf.png",
       "alt": "shoutouts spring 2017"
     },
@@ -86,7 +86,7 @@
       "date": "March 2017",
       "description": "Explore Street's favorite places to eat on this interactive map.",
       "sponsored": false,
-      "link": "http://projects.thedp.com/2017/03/dining-guide/",
+      "link": "https://projects.thedp.com/2017/03/dining-guide/",
       "image": "https://s3.amazonaws.com/media.dpn/58892_diningguidef.png",
       "alt": "dining guide spring 2017"
     },
@@ -97,7 +97,7 @@
       "date": "October 2016",
       "description": "Explore Street's favorite places to eat on this interactive map.",
       "sponsored": false,
-      "link": "http://projects.thedp.com/2016/10/dining-guide/",
+      "link": "https://projects.thedp.com/2016/10/dining-guide/",
       "image": "https://s3.amazonaws.com/media.dpn/56238_diningguideimgf.png",
       "alt": "dining guide fall 2016"
     },
@@ -108,7 +108,7 @@
       "date": "April 2015",
       "description": "Students' perceptions of cocaine perpetuate a split dichotomy.",
       "sponsored": false,
-      "link": "http://projects.34st.com/2015/04/the-dividing-line/",
+      "link": "https://projects.34st.com/2015/04/the-dividing-line/",
       "image": "https://s3.amazonaws.com/media.dpn/58891_dividinglinef.png",
       "alt": "the dividing line"
     }

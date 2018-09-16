@@ -36,7 +36,7 @@
     <div class="container">
       <h1>PROJECTS &amp; GUIDES</h1>
 
-      <div class="row" id="featured-main"></div>
+      <div class="row article-row featured-row" id="featured-main"></div>
 
       <hr>
 
@@ -50,7 +50,7 @@
 
       <footer>
         <hr>
-        <p>Copyright &copy; 2017, The Daily Pennsylvanian. All Rights Reserved.</p>
+        <p>Copyright &copy; 2018, The Daily Pennsylvanian. All Rights Reserved.</p>
       </footer>
     </div>
   </body>
@@ -63,36 +63,36 @@
         var htmlStr = '';
         if (artIndex === 0) {
           htmlStr =
-            '<div class="col-md-7">' +
-              '<img src="' + article.image + '" class="img img-responsive" alt ="' + article.alt + '">' +
+            '<div class="col-md-7 featured">' +
+              `<img src="${article.image}" class="img img-responsive" alt ="${article.alt}">` +
             '</div>' +
-            '<div class="col-md-5">' +
-              '<div class="row" id="info">' +
-                '<div class="col-xs-6" id="featured-tag">' + article.section + '</div>' +
-                '<div class="col-xs-6" id="featured-date">' + article.date + '</div>' +
+            '<div class="col-md-5 featured">' +
+              '<div class="row info">' +
+                `<div class="col-xs-6 tag">${article.section}</div>` +
+                `<div class="col-xs-6 date">${article.date}</div>` +
               '</div>' +
-              '<div class="row" id="featured-title">' +
-                '<a href="' + article.link + '" target="_blank">' + article.title + '</a>' +
+              '<div class="row title featured-title">' +
+                `<a href="${article.link}" target="_blank">${article.title}</a>` +
               '</div>' +
-              '<div class="row" id="desc">' + article.description + '</div>' +
-              '<div class="row" id="credits">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</div>' +
+              `<div class="row description">${article.description}</div>` +
+              `<div class="row credits">${article.sponsored ? 'Sponsored by ' : ''}${article.author}</div>` +
             '</div>'
           $('#featured-main').append(htmlStr);
         } else {
           htmlStr =
-            '<div class="col-md-6">' +
+            '<div class="col-md-6 top">' +
               '<div class="row">' +
-                '<img src="' + article.image + '" class="img img-responsive" alt ="' + article.alt + '">' +
+                `<img src="${article.image}" class="img img-responsive" alt ="${article.alt}">` +
               '</div>' +
-              '<div class="row" id="info">' +
-                '<div class="col-xs-6" id="tag">' + article.section + '</div>' +
-                '<div class="col-xs-6" id="date">' + article.date + '</div>' +
+              '<div class="row info">' +
+                `<div class="col-xs-6 tag top-tag">${article.section}</div>` +
+                `<div class="col-xs-6 date top-date">${article.date}</div>` +
               '</div>' +
-              '<div class="row" id="title">' +
-                '<a href="' + article.link + '" target="_blank">' + article.title + '</a>' +
+              '<div class="row title">' +
+                `<a href="${article.link}" target="_blank">${article.title}</a>` +
               '</div>' +
-              '<div class="row" id="desc">' + article.description + '</div>' +
-              '<div class="row" id="credits">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</div>' +
+              `<div class="row description">${article.description}</div>` +
+              `<div class="row credits">${article.sponsored ? 'Sponsored by ' : ''}${article.author}</div>` +
             '</div>'
           $('#featured-secondary').append(htmlStr);
         }
@@ -101,20 +101,20 @@
       $.each(data.articles, function(artIndex) {
         var article = data.articles[artIndex];
         var htmlStr =
-          '<div class="row">' +
+          '<div class="row article-row">' +
             '<div class="col-md-4">' +
-              '<img src="' + article.image + '" class="img img-responsive" alt ="' + article.alt + '">' +
+              `<img src="${article.image}" class="img img-responsive" alt ="${article.alt}">` +
             '</div>' +
-            '<div class="col-md-8">' +
-              '<div class="row" id="info">' +
-                '<div class="col-xs-6" id="all-tag">' + article.section + '</div>' +
-                '<div class="col-xs-6" id="all-date">' + article.date + '</div>' +
+            '<div class="col-md-8 article-info">' +
+              '<div class="row info">' +
+                `<div class="col-xs-6 tag">${article.section}</div>` +
+                `<div class="col-xs-6 date">${article.date}</div>` +
               '</div>' +
-              '<div class="row" id="title">' +
-                '<a href="' + article.link + '" target="_blank">' + article.title + '</a>' +
+              '<div class="row title">' +
+                `<a href="${article.link}" target="_blank">${article.title}</a>` +
               '</div>' +
-              '<div class="row" id="desc">' + article.description + '</div>' +
-              '<div class="row" id="credits">' + (article.sponsored ? 'Sponsored by ' + article.author : article.author) + '</div>' +
+              `<div class="row description">${article.description}</div>` +
+              `<div class="row credits">${article.sponsored ? 'Sponsored by ' : ''}${article.author}</div>` +
             '</div>' +
           '</div>'
           // don't add hr to the last article

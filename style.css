@@ -1,38 +1,36 @@
-nav img {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: block;
-  margin: auto;
-  width: 125px;
+body {
+  font-family: 'pt-serif', serif;
+  font-style: normal;
+  margin: 0;
 }
 
-h1 {
-  text-align: center;
-  color: #4BBFBE;
-  font-family: "futura-pt", sans-serif;
+nav img {
+  width: 125px;
+  display: block;
+  margin: auto;
+  padding: 15px 0;
+}
+
+h1, h2 {
+  margin: 85px 0 10px;
+  font-family: 'futura-pt', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 72px;
-  padding-top: 65px;
+  text-align: center;
+}
+
+h1 {
+  color: #4BBFBE;
 }
 
 h2 {
-  text-align: center;
-  font-family: "futura-pt", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+  margin: 20px 0 25px;
   font-size: 50px;
-  padding-bottom: 15px;
-}
-
-body {
-  font-family: "pt-serif", serif;
-  font-style: normal;
 }
 
 hr {
-  margin-top: 35px;
-  padding-bottom: 15px;
+  margin: 35px 0;
 }
 
 a, a:visited {
@@ -46,125 +44,89 @@ a:hover, a:active, a:focus {
 }
 
 footer {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0px;
-  padding: 15px;
+  margin: 20px auto;
   text-align: center;
 }
 
-footer > hr {
-  padding: 0px;
+footer hr {
+  margin-bottom: 20px;
 }
 
-#info {
-  font-family: "futura-pt", sans-serif;
-  text-transform: uppercase;
-  color: #999;
-  font-style: normal;
-  font-size: 20px;
-  padding-bottom: 0px;
-}
-
-#featured-tag {
-  font-weight: 700;
-  padding-left: 0px;
-}
-
-#featured-date {
-  font-weight: 400;
-  text-align: right;
-  padding-right: 0px;
-}
-
-#tag {
-  font-weight: 700;
-  padding-top: 15px;
-  padding-left: 0px;
-}
-
-#all-tag {
-  font-weight: 700;
-  padding-left: 0px;
-}
-
-#date {
-  font-weight: 400;
-  text-align: right;
-  padding-top: 15px;
-  padding-right: 0px;
-}
-
-#all-date {
-  font-weight: 400;
-  text-align: right;
-  padding-right: 0px;
-}
-
-#featured-title {
-  font-family: "futura-pt", sans-serif;
-  color: #000;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  padding-bottom: 15px;
-  line-height: 120%;
-}
-
-#title {
-  font-family: "futura-pt", sans-serif;
-  color: #000;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 120%;
-}
-
-#desc {
-  font-size: 20px;
-}
-
-#credits {
-  color: #999;
-  font-size: 15px;
-  padding-top: 15px;
+.container {
+  margin: 0 auto;
 }
 
 .row {
-  margin-left: 0px;
-  margin-right: 0px;
-  position: relative;
+  margin: 0;
 }
 
-.row:first-of-type {
-  padding: 0px;
+.article-row {
+  display: flex;
+  align-items: flex-end;
 }
 
-.col-md-6:first-of-type {
+.featured-row {
+  padding: 0;
+}
+
+.featured {
+  padding: 15px 15px 0;
+}
+
+.top:first-of-type {
   border-right: 1px solid #EEE;
   padding-right: 40px;
 }
 
-.col-md-6:last-of-type {
+.top:last-of-type {
   padding-left: 40px;
 }
 
-.col-md-7, .col-md-5 {
+.info {
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 20px;
+  padding-bottom: 0;
+}
+
+.tag {
+  font-weight: 700;
+  padding-left: 0;
+}
+
+.date {
+  font-weight: 400;
+  text-align: right;
+  padding-right: 0;
+}
+
+.top-tag, .top-date {
   padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
-.col-md-5 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.title {
+  font-family: "futura-pt", sans-serif;
+  color: #000;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
 }
 
-.col-md-8 {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.featured-title {
+  font-weight: 700;
+  font-size: 38px;
+  padding-bottom: 15px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.credits {
+  color: #999;
+  font-size: 15px;
+  padding-top: 15px;
 }
 
 ::selection {
@@ -174,32 +136,24 @@ footer > hr {
 
 @media screen and (max-width: 991px) {
   hr {
-    margin-top: 30px;
+    margin: 30px 0;
   }
 
-  .row {
-    position: inherit;
+  .article-row {
+    flex-direction: column;
   }
 
-  .col-md-5 {
-    position: inherit;
-  }
-
-  .col-md-8 {
+  .article-info {
     padding-top: 15px;
-    position: inherit;
   }
 
-  .col-md-6:first-of-type {
+  .top:first-of-type {
     border-right: none;
-    padding-right: 15px;
     border-bottom: 1px solid #EEE;
-    padding-bottom: 30px;
+    padding: 0 15px 30px;
   }
 
-  .col-md-6:last-of-type {
-    border-right: none;
-    padding-left: 15px;
-    padding-top: 35px;
+  .top:last-of-type {
+    padding: 30px 15px 0;
   }
 }
