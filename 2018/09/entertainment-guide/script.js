@@ -123,29 +123,22 @@ map.on('load', function() {
 });
 
 for (let data of dataArray){
-  const title = listing.appendChild(document.createElement('h1'));
-  title.className = 'title';
-  title.innerHTML = data.catName;
+  const listing = listings.appendChild(document.createElement('div'));
+  listing.className = 'item';
 
-  for(let j in dataArray[i].features){
-    let features = dataArray[i].features[j]
+  for (let feature of data.features) {
+    const prop = feature.properties;
 
-    var listing = listings.appendChild(document.createElement('div'));
-    listing.className = 'item';
-    listing.position = i;
-
-    var title = listing.appendChild(document.createElement('h6'));
+    const title = listing.appendChild(document.createElement('h6'));
     title.className = 'title';
     title.innerHTML = prop.title;
 
-    var details = listing.appendChild(document.createElement('div'));
+    const details = listing.appendChild(document.createElement('div'));
     details.innerHTML = '<i>'+ prop.address +'</i>';
 
     listing.addEventListener('click', function(e) {
-      console.log(prop);
-      var text = '<h4>' + features.properties.title + '</h4><p class="blurb">' + features.properties.blurb  + '</p><a href="' +
-      prop.url + '" target="_blank">Read more »</a>';
-      var coordinates = dataArray[i].features[j].geometry.coordinates;
+      const text = `<h4>${features.properties.title}</h4><p class="blurb">${features.properties.blurb}</p><a href="${prop.url}" target="_blank">Read more »</a>`;
+      const coordinates = prop.geometry.coordinates;
 
       clearPopups();
       map.setCenter(coordinates, 16);
