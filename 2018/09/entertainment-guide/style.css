@@ -22,12 +22,8 @@
 }
 
 .item {
-  border: 1px solid #000;
-  margin-bottom: 20px;
-}
-
-.item div {
   border-bottom: 1px solid #000;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 768px) {

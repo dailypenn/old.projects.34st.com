@@ -592,7 +592,7 @@ var interactiveExperiences = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: []
+        coordinates: [0,0]
       },
       properties: {
         title: "Philly Brewery Tours",
@@ -616,7 +616,7 @@ var interactiveExperiences = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: []
+        coordinates: [0,0]
       },
       properties: {
         title: "Chewy Food Tour",
@@ -876,7 +876,7 @@ var arts = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: []
+        coordinates: [0,0]
       },
       properties: {
         title: "Mural Mile South",
@@ -888,7 +888,7 @@ var arts = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: []
+        coordinates: [0,0]
       },
       properties: {
         title: "Mural Mile North",
@@ -900,7 +900,7 @@ var arts = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: []
+        coordinates: [0,0]
       },
       properties: {
         title: "Love Letter Murals",
@@ -1131,9 +1131,9 @@ var novelties = {
   ]
 };
 
-var dataArray = [filmTV, liveTheater, musicVenues, performanceVenues,
-interactiveExperiences, arts, dance, novelties];
-
+const dataArray = [...filmTV.features, ...liveTheater.features, ...musicVenues.features,
+                   ...performanceVenues.features, ...interactiveExperiences.features,
+                   ...arts.features, ...dance.features, ...novelties.features];
 var popups = [];
 
 function clearPopups() {
@@ -1268,58 +1268,34 @@ map.on('load', function() {
   });
 });
 
-for (let data of dataArray){
+for (let i in dataArray) {
+  const feature = dataArray[i];
   const listing = listings.appendChild(document.createElement('div'));
   listing.className = 'item';
+  listing.position = i;
 
-  for (let feature of data.features) {
-    const prop = feature.properties;
+  const prop = feature.properties;
+  const title = listing.appendChild(document.createElement('h6'));
+  title.className = 'title';
+  title.innerHTML = prop.title;
 
-    const title = listing.appendChild(document.createElement('h6'));
-    title.className = 'title';
-    title.innerHTML = prop.title;
+  const details = listing.appendChild(document.createElement('div'));
+  details.innerHTML = '<i>'+ prop.address +'</i>';
 
-    const details = listing.appendChild(document.createElement('div'));
-    details.innerHTML = '<i>'+ prop.address +'</i>';
+  listing.addEventListener('click', function(e) {
+    const curr = dataArray[this.position];
+    const prop = curr.properties;
+    const text = `<h4>${prop.title}</h4><p>${prop.address}</p>`;
+    // do we want to add these?
+    // <p class="blurb">${prop.blurb}</p><a href="${prop.url}" target="_blank">Read more »</a>
+    const coordinates = curr.geometry.coordinates;
 
-    listing.addEventListener('click', function(e) {
-      const text = `<h4>${features.properties.title}</h4><p class="blurb">${features.properties.blurb}</p><a href="${prop.url}" target="_blank">Read more »</a>`;
-      const coordinates = prop.geometry.coordinates;
-
-      clearPopups();
-      map.setCenter(coordinates, 16);
-      var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
-      popups.push(popup);
-    });
-  }
+    clearPopups();
+    map.setCenter(coordinates, 16);
+    var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
+    popups.push(popup);
+  });
 }
-
-// for (var i in geojson.features) {
-//   var prop = geojson.features[i].properties;
-//   var listing = listings.appendChild(document.createElement('div'));
-//   listing.className = 'item';
-//   listing.position = i;
-//
-//   var title = listing.appendChild(document.createElement('h6'));
-//   title.className = 'title';
-//   title.innerHTML = prop.title;
-//
-//   var details = listing.appendChild(document.createElement('div'));
-//   details.innerHTML = '<i>'+ prop.address +'</i>';
-//
-//   // add click event listener for listings
-//   listing.addEventListener('click', function(e) {
-//     var feature = geojson.features[this.position];
-//     var text = '<h4>' + feature.properties.title + '</h4><p class="blurb">' + feature.properties.blurb  + '</p><a href="' +
-//                feature.properties.url + '" target="_blank">Read more »</a>';
-//     var coordinates = feature.geometry.coordinates;
-//
-//     clearPopups();
-//     map.setCenter(coordinates, 16);
-//     var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
-//     popups.push(popup);
-//   });
-// }
 
 map.on('click', 'restaurants', function (e) {
   var coordinates = e.features[0].geometry.coordinates.slice();
