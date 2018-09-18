@@ -1,6 +1,46 @@
-.map-container {
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i');
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+section {
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
+}
+
+.categories {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.col-6 {
+  width: 50%;
+  height: 100px;
+  background-color: blue;
+}
+
+.col-6:nth-of-type(4n+1) {
+  background-color: red;
+}
+
+.col-6:nth-of-type(4n+2) {
+  background-color: yellow;
+}
+
+.col-6:nth-of-type(4n+3) {
+  background-color: purple;
 }
 
 .map {
@@ -10,7 +50,7 @@
 
 .listings {
   width: 33.3333%;
-  height: 100vh;
+  height: calc(100vh - 40px);
   padding: 20px;
   overflow-y: auto;
 }
@@ -23,12 +63,23 @@
 
 .item {
   border-bottom: 1px solid #000;
-  margin-bottom: 20px;
+  padding: 20px 0;
+}
+
+p.address {
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  margin: 0;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {
-  .map-container {
+  section {
     flex-direction: column;
+  }
+
+  .categories {
+    width: 100%;
   }
 
   .map {

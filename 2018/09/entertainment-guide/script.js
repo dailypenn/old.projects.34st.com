@@ -1151,7 +1151,7 @@ const map = new mapboxgl.Map({
   style: 'mapbox://styles/dpwebdev/cjfbcjxzi69w52rk936tb9lyu',
   center: [-75.2156881, 39.9483286],
   zoom: 13,
-  scrollZoom: true
+  scrollZoom: false
 });
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -1178,7 +1178,7 @@ map.on('load', () => {
     map.on('click', name, (e) => {
       const coordinates = e.features[0].geometry.coordinates.slice();
       const prop = e.features[0].properties;
-      const text = `<h4>${prop.title}</h4><p>${prop.address}</p>`;
+      const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p>`;
 
       popups.push(new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map));
     });
@@ -1203,17 +1203,17 @@ for (let i in dataArray) {
   listing.position = i;
 
   const prop = feature.properties;
-  const title = listing.appendChild(document.createElement('h6'));
+  const title = listing.appendChild(document.createElement('h4'));
   title.className = 'title';
   title.innerHTML = prop.title;
 
   const details = listing.appendChild(document.createElement('div'));
-  details.innerHTML = '<i>'+ prop.address +'</i>';
+  details.innerHTML = `<p class="address">${prop.address}</p>`;
 
   listing.addEventListener('click', function(e) {
     const curr = dataArray[this.position];
     const prop = curr.properties;
-    const text = `<h4>${prop.title}</h4><p>${prop.address}</p>`;
+    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p>`;
     const coordinates = curr.geometry.coordinates;
 
     // clear popups so we only have one on the map at once

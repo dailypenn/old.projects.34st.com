@@ -20,15 +20,22 @@
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
   <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="map-container">
+  <section>
+    <div class="categories">
+      <div class="col-6 theaters"></div>
+      <div class="col-6 movies"></div>
+      <div class="col-6 music-venues"></div>
+      <div class="col-6 performances"></div>
+    </div>
+  </section>
+  <section>
     <div id="map" class="map"></div>
     <div id="listings" class="listings"></div>
-  </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
