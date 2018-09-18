@@ -1,6 +1,7 @@
 var filmTV = {
   type: "FeatureCollection",
-  catName:"Film and TV",
+  category: "filmTV",
+  color: "rgb(254, 240, 55)",
   features: [
     {
       type: "Feature",
@@ -69,7 +70,8 @@ var filmTV = {
 
 var liveTheater = {
   type: "FeatureCollection",
-  catName:"Live Theater",
+  category: "liveTheater",
+  color: "rgb(22, 138, 167)",
   features: [
     {
       type: "Feature",
@@ -221,7 +223,8 @@ var liveTheater = {
 
 var musicVenues = {
   type: "FeatureCollection",
-  catName:"Music Venues",
+  category: "musicVenues",
+  color: "rgb(8, 61, 82)",
   features: [
     {
       type: "Feature",
@@ -421,7 +424,8 @@ var musicVenues = {
 
 var performanceVenues = {
   type: "FeatureCollection",
-  catName:"Performance Venues",
+  category: "performanceVenues",
+  color: "rgb(12, 18, 21)",
   features: [
     {
       type: "Feature",
@@ -537,7 +541,8 @@ var performanceVenues = {
 
 var interactiveExperiences = {
   type: "FeatureCollection",
-  catName:"Interactive Experiences",
+  category: "interactiveExperiences",
+  color: "rgb(76, 93, 99)",
   features: [
     {
       type: "Feature",
@@ -713,7 +718,8 @@ var interactiveExperiences = {
 
 var arts = {
   type: "FeatureCollection",
-  catName:"Arts",
+  category: "arts",
+  color: "rgb(10, 83, 103)",
   features: [
     {
       type: "Feature",
@@ -925,7 +931,8 @@ var arts = {
 
 var dance = {
   type: "FeatureCollection",
-  catName:"Places To Dance",
+  category: "dance",
+  color: "rgb(22, 136, 170)",
   features: [
     {
       type: "Feature",
@@ -1041,7 +1048,8 @@ var dance = {
 
 var novelties = {
   type: "FeatureCollection",
-  catName:"Novelties",
+  category: "novelties",
+  color: "rgb(0, 0, 0)",
   features: [
     {
       type: "Feature",
@@ -1131,19 +1139,14 @@ var novelties = {
   ]
 };
 
+const categories = [filmTV, liveTheater, musicVenues, performanceVenues, interactiveExperiences, arts, dance, novelties];
 const dataArray = [...filmTV.features, ...liveTheater.features, ...musicVenues.features,
                    ...performanceVenues.features, ...interactiveExperiences.features,
                    ...arts.features, ...dance.features, ...novelties.features];
-var popups = [];
-
-function clearPopups() {
-  popups.forEach(function(el) {
-    el.remove();
-  });
-}
+const popups = [];
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2pmYmN2dDB4MWNoYjRlcTdjM2Y3bGpzZyJ9.1m44PhD4VmqEhKhI4FhPKA';
-var map = new mapboxgl.Map({
+const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/dpwebdev/cjfbcjxzi69w52rk936tb9lyu',
   center: [-75.2156881, 39.9483286],
@@ -1153,121 +1156,46 @@ var map = new mapboxgl.Map({
 
 map.addControl(new mapboxgl.NavigationControl());
 
-// populate map
-map.on('load', function() {
-  map.addSource('filmTV', {
-    type: 'geojson',
-    data: filmTV
-  });
+// populate map with separate data and layers for each category
+map.on('load', () => {
+  categories.forEach((category) => {
+    const name = category.category;
+    map.addSource(name, {
+      type: 'geojson',
+      data: category
+    });
 
-  map.addSource('liveTheater', {
-    type: 'geojson',
-    data: liveTheater
-  });
+    map.addLayer({
+      "id": name,
+      "type": "circle",
+      "paint": {
+        "circle-color": category.color
+      },
+      "source": name
+    });
 
-  map.addSource('musicVenues', {
-    type: 'geojson',
-    data: musicVenues
-  });
+    // add listeners for popups when clicking on point
+    map.on('click', name, (e) => {
+      const coordinates = e.features[0].geometry.coordinates.slice();
+      const prop = e.features[0].properties;
+      const text = `<h4>${prop.title}</h4><p>${prop.address}</p>`;
 
-  map.addSource('performanceVenues', {
-    type: 'geojson',
-    data: performanceVenues
-  });
+      popups.push(new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map));
+    });
 
-  map.addSource('interactiveExperiences', {
-    type: 'geojson',
-    data: interactiveExperiences
-  });
+    // change the cursor to a pointer when the mouse is over the current layer
+    map.on('mouseenter', name, () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
 
-  map.addSource('arts', {
-    type: 'geojson',
-    data: arts
-  });
-
-  map.addSource('dance', {
-    type: 'geojson',
-    data: dance
-  });
-
-  map.addSource('novelties', {
-    type: 'geojson',
-    data: novelties
-  });
-
-  map.addLayer({
-    "id": "filmTV",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(254, 240, 55)"
-    },
-    "source": "filmTV"
-  });
-
-  map.addLayer({
-    "id": "liveTheater",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(22, 138, 167)"
-    },
-    "source": "liveTheater"
-  });
-
-  map.addLayer({
-    "id": "musicVenues",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(8, 61, 82)"
-    },
-    "source": "musicVenues"
-  });
-
-  map.addLayer({
-    "id": "performanceVenues",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(12, 18, 21)"
-    },
-    "source": "performanceVenues"
-  });
-
-  map.addLayer({
-    "id": "interactiveExperiences",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(76, 93, 99)"
-    },
-    "source": "interactiveExperiences"
-  });
-
-  map.addLayer({
-    "id": "arts",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(10, 83, 103)"
-    },
-    "source": "arts"
-  });
-
-  map.addLayer({
-    "id": "dance",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(22, 136, 170)"
-    },
-    "source": "dance"
-  });
-
-  map.addLayer({
-    "id": "novelties",
-    "type": "circle",
-    "paint": {
-      "circle-color": "rgb(0, 0, 0)"
-    },
-    "source": "novelties"
+    // change it back to a pointer when it leaves.
+    map.on('mouseleave', name, () => {
+      map.getCanvas().style.cursor = '';
+    });
   });
 });
 
+// create listings and add listing click listeners
 for (let i in dataArray) {
   const feature = dataArray[i];
   const listing = listings.appendChild(document.createElement('div'));
@@ -1286,32 +1214,14 @@ for (let i in dataArray) {
     const curr = dataArray[this.position];
     const prop = curr.properties;
     const text = `<h4>${prop.title}</h4><p>${prop.address}</p>`;
-    // do we want to add these?
-    // <p class="blurb">${prop.blurb}</p><a href="${prop.url}" target="_blank">Read more »</a>
     const coordinates = curr.geometry.coordinates;
 
-    clearPopups();
+    // clear popups so we only have one on the map at once
+    popups.forEach((el) => {
+      el.remove();
+    });
+
     map.setCenter(coordinates, 16);
-    var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
-    popups.push(popup);
+    popups.push(new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map));
   });
 }
-
-map.on('click', 'restaurants', function (e) {
-  var coordinates = e.features[0].geometry.coordinates.slice();
-  var prop = e.features[0].properties;
-  var text = '<h4>' + prop.title + '</h4><a href="' + prop.url + '" target="_blank">Read more »</a>';
-
-  var popup = new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map);
-  popups.push(popup);
-});
-
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'restaurants', function () {
-  map.getCanvas().style.cursor = 'pointer';
-});
-
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'restaurants', function () {
-  map.getCanvas().style.cursor = '';
-});
