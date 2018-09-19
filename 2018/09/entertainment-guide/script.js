@@ -641,7 +641,7 @@ var interactiveExperiences = {
         coordinates: [-75.1696549,39.9439936]
       },
       properties: {
-        title: "Philadelphia Dance Fitness",
+        title: "Philly Dance Fitness",
         address:"1624 South Street",
         "marker-size": "large"
       }
@@ -653,7 +653,7 @@ var interactiveExperiences = {
         coordinates: [-75.2151339,39.9813277]
       },
       properties: {
-        title: "Shofuso Japanese House and Garden",
+        title: "Shofuso Japanese Cultural Center",
         address:"Lansdowne Drive and Horticultural Drive",
         "marker-size": "large"
       }
