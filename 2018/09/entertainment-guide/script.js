@@ -49,7 +49,7 @@ var filmTV = {
       },
       properties: {
         title: "Prince Theater",
-        address:"1412 Chestnut",
+        address:"1412 Chestnut Street",
         "marker-size": "large"
       }
     },
@@ -96,7 +96,7 @@ var liveTheater = {
       },
       properties: {
         title: "Arden Theater",
-        address:"40 N. Second Street",
+        address:"40 N 2nd Street",
         "marker-size": "large"
       }
     },
@@ -108,7 +108,7 @@ var liveTheater = {
       },
       properties: {
         title: "Prince Theater",
-        address:"1412 Chesnut Street",
+        address:"1412 Chestnut Street",
         "marker-size": "large"
       }
     },
@@ -144,7 +144,7 @@ var liveTheater = {
       },
       properties: {
         title: "Kimmel Center",
-        address:"3000 South Broad Street",
+        address:"3000 S Broad Street",
         "marker-size": "large"
       }
     },
@@ -156,7 +156,7 @@ var liveTheater = {
       },
       properties: {
         title: "Suzanne Roberts",
-        address:"480 South Broad Street",
+        address:"480 S Broad Street",
         "marker-size": "large"
       }
     },
@@ -168,7 +168,7 @@ var liveTheater = {
       },
       properties: {
         title: "Latern Theater Company",
-        address:"923 Ludlow St",
+        address:"923 Ludlow Street",
         "marker-size": "large"
       }
     },
@@ -180,7 +180,7 @@ var liveTheater = {
       },
       properties: {
         title: "Curio Theater Company",
-        address:"4740 Baltimore Ave",
+        address:"4740 Baltimore Avenue",
         "marker-size": "large"
       }
     },
@@ -192,7 +192,7 @@ var liveTheater = {
       },
       properties: {
         title: "New Freedom Theater",
-        address:"1346 North Broad Street ",
+        address:"1346 N Broad Street",
         "marker-size": "large"
       }
     }
@@ -203,7 +203,7 @@ var musicVenues = {
   type: "FeatureCollection",
   category: "musicVenues",
   name: "Music Venues",
-  color: "rgb(8, 61, 82)",
+  color: "rgb(8, 61, 102)",
   features: [
     {
       type: "Feature",
@@ -225,7 +225,7 @@ var musicVenues = {
         coordinates: [-75.1487463,39.941247]
       },
       properties: {
-        title: "Theater of Living Arts ",
+        title: "Theater of Living Arts",
         address:"334 South Street",
         "marker-size": "large"
       }
@@ -286,7 +286,7 @@ var musicVenues = {
       },
       properties: {
         title: "Electric Factory",
-        address:"421 North 7th Street",
+        address:"421 N 7th Street",
         "marker-size": "large"
       }
     },
@@ -297,8 +297,8 @@ var musicVenues = {
         coordinates: [-75.1350602,39.9655615]
       },
       properties: {
-        title: "Filmore/The Foundry",
-        address:"29 East Allen Street",
+        title: "Fillmore/The Foundry",
+        address:"29 E Allen Street",
         "marker-size": "large"
       }
     },
@@ -310,7 +310,7 @@ var musicVenues = {
       },
       properties: {
         title: "Boot & Saddle",
-        address:"1131 South Broad Street",
+        address:"1131 S Broad Street",
         "marker-size": "large"
       }
     },
@@ -322,7 +322,7 @@ var musicVenues = {
       },
       properties: {
         title: "Trocadero",
-        address:"1003 Arch Street ",
+        address:"1003 Arch Street",
         "marker-size": "large"
       }
     },
@@ -334,7 +334,7 @@ var musicVenues = {
       },
       properties: {
         title: "Tower Theater",
-        address:" S 69th Street and Ludlow Street",
+        address:"S 69th Street and Ludlow Street",
         "marker-size": "large"
       }
     },
@@ -346,7 +346,7 @@ var musicVenues = {
       },
       properties: {
         title: "Academy of Music",
-        address:"240 South Broad Street",
+        address:"240 S Broad Street",
         "marker-size": "large"
       }
     },
@@ -358,7 +358,7 @@ var musicVenues = {
       },
       properties: {
         title: "Metropolitan Opera House",
-        address:"858 North Broad Street",
+        address:"858 N Broad Street",
         "marker-size": "large"
       }
     },
@@ -382,7 +382,7 @@ var musicVenues = {
       },
       properties: {
         title: "Connie's Ric Rac",
-        address:"1132 South 9th St",
+        address:"1132 S 9th St",
         "marker-size": "large"
       }
     },
@@ -394,7 +394,7 @@ var musicVenues = {
       },
       properties: {
         title: "Underground Arts",
-        address:"1200 Callowhill St",
+        address:"1200 Callowhill Street",
         "marker-size": "large"
       }
     },
@@ -406,7 +406,7 @@ var musicVenues = {
       },
       properties: {
         title: "Everybody Hits",
-        address:"529 W Girard Ave",
+        address:"529 W Girard Avenue",
         "marker-size": "large"
       }
     }
@@ -417,7 +417,7 @@ var performanceVenues = {
   type: "FeatureCollection",
   category: "performanceVenues",
   name: "Performance Venues",
-  color: "rgb(12, 18, 21)",
+  color: "rgb(30, 30, 30)",
   features: [
     {
       type: "Feature",
@@ -488,7 +488,7 @@ var performanceVenues = {
       },
       properties: {
         title: "Green Haus",
-        address:"38th and Lancaster",
+        address:"38th Street and Lancaster Avenue",
         "marker-size": "large"
       }
     },
@@ -499,7 +499,7 @@ var performanceVenues = {
         coordinates: [-75.1675459,39.9440623]
       },
       properties: {
-        title: "Bob and Barbs",
+        title: "Bob and Barb's",
         address:"1509 South Street",
         "marker-size": "large"
       }
@@ -512,7 +512,7 @@ var performanceVenues = {
       },
       properties: {
         title: "Urban Art Gallery",
-        address:"262 South 52 Street",
+        address:"262 S 52nd Street",
         "marker-size": "large"
       }
     },
@@ -570,7 +570,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Bury the Hatchet",
-        address:"1719 Washington Avenue, 2nd Floor",
+        address:"1719 Washington Avenue",
         "marker-size": "large"
       }
     },
@@ -582,7 +582,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Go Vertical Rock Climbing Gym",
-        address:"950 North Penn St.",
+        address:"950 N Penn Street",
         "marker-size": "large"
       }
     },
@@ -594,7 +594,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Pinot Boutique",
-        address:"227 Market Street, Old City",
+        address:"227 Market Street",
         "marker-size": "large"
       }
     },
@@ -606,7 +606,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Painting with a Twist",
-        address:"611 South St",
+        address:"611 South Street",
         "marker-size": "large"
       }
     },
@@ -630,7 +630,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Pole Haus",
-        address:"1719 Chestnut Street, Suite 401",
+        address:"1719 Chestnut Street",
         "marker-size": "large"
       }
     },
@@ -642,7 +642,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Philadelphia Dance Fitness",
-        address:"1624 South Street, Rittenhouse Square",
+        address:"1624 South Street",
         "marker-size": "large"
       }
     },
@@ -654,7 +654,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Shofuso Japanese House and Garden",
-        address:"5070 Parkside Avenue, Suite 1404",
+        address:"5070 Parkside Avenue",
         "marker-size": "large"
       }
     },
@@ -666,7 +666,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Bartram's Garden",
-        address:"5400 Lindbergh Blvd.",
+        address:"5400 Lindbergh Boulevard",
         "marker-size": "large"
       }
     },
@@ -678,7 +678,7 @@ var interactiveExperiences = {
       },
       properties: {
         title: "Aqua Vitae",
-        address:"148 N 17th St",
+        address:"148 N 17th Street",
         "marker-size": "large"
       }
     }
@@ -689,7 +689,7 @@ var arts = {
   type: "FeatureCollection",
   category: "arts",
   name: "Museums &amp; Galleries",
-  color: "rgb(10, 83, 103)",
+  color: "rgb(87, 137, 67)",
   features: [
     {
       type: "Feature",
@@ -736,7 +736,7 @@ var arts = {
       },
       properties: {
         title: "PMA",
-        address:"2600 Benjamin Franklin Parkway ",
+        address:"2600 Benjamin Franklin Parkway",
         "marker-size": "large"
       }
     },
@@ -772,7 +772,7 @@ var arts = {
       },
       properties: {
         title: "PhilaMOCA",
-        address:"531 N. 12 Street",
+        address:"531 N 12 Street",
         "marker-size": "large"
       }
     },
@@ -796,7 +796,7 @@ var arts = {
       },
       properties: {
         title: "ICA",
-        address:"118 South 36th Street",
+        address:"118 S 36th Street",
         "marker-size": "large"
       }
     },
@@ -808,7 +808,7 @@ var arts = {
       },
       properties: {
         title: "Woodmere Art Museum",
-        address:"92021 Germantown Avenue ",
+        address:"92021 Germantown Avenue",
         "marker-size": "large"
       }
     },
@@ -832,7 +832,7 @@ var arts = {
       },
       properties: {
         title: "Paradigm Gallery + Studio",
-        address:"746 S 4th St",
+        address:"746 S 4th Street",
         "marker-size": "large"
       }
     },
@@ -856,7 +856,7 @@ var arts = {
       },
       properties: {
         title: "Mural Mile South",
-        address:"South of Market Street to Lombard Street and Back ",
+        address:"South of Market Street to Lombard Street",
         "marker-size": "large"
       }
     },
@@ -880,7 +880,7 @@ var arts = {
       },
       properties: {
         title: "Love Letter Murals",
-        address:"Market Street, 45-63 Streets",
+        address:"Market Street, from 45th-63rd Streets",
         "marker-size": "large"
       }
     },
@@ -903,7 +903,7 @@ var dance = {
   type: "FeatureCollection",
   category: "dance",
   name: "Places to Dance",
-  color: "rgb(22, 136, 170)",
+  color: "rgb(101, 45, 145)",
   features: [
     {
       type: "Feature",
@@ -926,7 +926,7 @@ var dance = {
       },
       properties: {
         title: "Cuba Libre",
-        address:"10 S. 2nd Street",
+        address:"10 S 2nd Street",
         "marker-size": "large"
       }
     },
@@ -950,7 +950,7 @@ var dance = {
       },
       properties: {
         title: "Concourse",
-        address:"1635 Market Street, back entrance",
+        address:"1635 Market Street",
         "marker-size": "large"
       }
     },
@@ -974,7 +974,7 @@ var dance = {
       },
       properties: {
         title: "Liason Room",
-        address:"1253 North Front Street, second floor",
+        address:"1253 North Front Street",
         "marker-size": "large"
       }
     },
@@ -998,7 +998,7 @@ var dance = {
       },
       properties: {
         title: "Morgan's Pier",
-        address:"221 N. Christopher Columbus Avenue",
+        address:"221 N Christopher Columbus Avenue",
         "marker-size": "large"
       }
     },
@@ -1010,7 +1010,7 @@ var dance = {
       },
       properties: {
         title: "Dolphin Tavern",
-        address:"1539 South Broad Street",
+        address:"1539 S Broad Street",
         "marker-size": "large"
       }
     }
@@ -1021,7 +1021,7 @@ var novelties = {
   type: "FeatureCollection",
   category: "novelties",
   name: "Oddities",
-  color: "rgb(0, 0, 0)",
+  color: "rgb(242, 169, 60)",
   features: [
     {
       type: "Feature",
@@ -1032,7 +1032,7 @@ var novelties = {
       properties: {
         title: "Mutter Museum",
         category: "Oddities",
-        address:"3001, 19 S 22nd St",
+        address:"19 S 22nd Street",
         "marker-size": "large"
       }
     },
@@ -1044,7 +1044,7 @@ var novelties = {
       },
       properties: {
         title: "Insectarium",
-        address:"8046 Frankford Ave",
+        address:"8046 Frankford Avenue",
         "marker-size": "large"
       }
     },
@@ -1056,7 +1056,7 @@ var novelties = {
       },
       properties: {
         title: "Temple School of Podiatric Medicine Museum of Shoes",
-        address:"148 N. 8th Street",
+        address:"148 N 8th Street",
         "marker-size": "large"
       }
     },
@@ -1080,7 +1080,7 @@ var novelties = {
       },
       properties: {
         title: "Henri David's Halloween",
-        address:"1329 Pine St",
+        address:"1329 Pine Street",
         "marker-size": "large"
       }
     },
@@ -1104,7 +1104,7 @@ var novelties = {
       },
       properties: {
         title: "The Strange and the Unusual",
-        address:"523 S 4th St",
+        address:"523 S 4th Street",
         "marker-size": "large"
       }
     }
@@ -1121,8 +1121,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2pmYmN2dDB4MWNoYjRlcTdjM
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/dpwebdev/cjfbcjxzi69w52rk936tb9lyu',
-  center: [-75.2156881, 39.9483286],
-  zoom: 13,
+  center: [-75.1850894,39.9522277],
+  zoom: 12,
   scrollZoom: false
 });
 
