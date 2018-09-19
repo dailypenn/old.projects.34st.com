@@ -650,11 +650,11 @@ var interactiveExperiences = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [-75.2210804,39.9800094]
+        coordinates: [-75.2151339,39.9813277]
       },
       properties: {
         title: "Shofuso Japanese House and Garden",
-        address:"5070 Parkside Avenue",
+        address:"Lansdowne Drive and Horticultural Drive",
         "marker-size": "large"
       }
     },
