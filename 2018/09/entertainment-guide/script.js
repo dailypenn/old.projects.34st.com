@@ -597,35 +597,11 @@ var interactiveExperiences = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [0,0]
-      },
-      properties: {
-        title: "Philly Brewery Tours",
-        address:"varies depending on tour",
-        "marker-size": "large"
-      }
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
         coordinates: [-75.1446532,39.9502633]
       },
       properties: {
         title: "Pinot Boutique",
         address:"227 Market Street, Old City",
-        "marker-size": "large"
-      }
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [0,0]
-      },
-      properties: {
-        title: "Chewy Food Tour",
-        address:"varies depending on tour",
         "marker-size": "large"
       }
     },
@@ -882,7 +858,7 @@ var arts = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [0,0]
+        coordinates: [-75.164069,39.9480901]
       },
       properties: {
         title: "Mural Mile South",
@@ -894,7 +870,7 @@ var arts = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [0,0]
+        coordinates: [-75.1577979,39.9566209]
       },
       properties: {
         title: "Mural Mile North",
@@ -906,7 +882,7 @@ var arts = {
       type: "Feature",
       geometry: {
         type: "Point",
-        coordinates: [0,0]
+        coordinates: [-75.2139657,39.957932]
       },
       properties: {
         title: "Love Letter Murals",
