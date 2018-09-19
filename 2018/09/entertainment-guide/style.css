@@ -100,12 +100,17 @@ p.presented-by {
 
 .col-6 {
   width: 50%;
+  background-size: cover;
 }
 
 .col-6 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.col-6:hover img {
+  visibility: hidden;
 }
 
 .map {
@@ -173,6 +178,38 @@ p.address {
 
 .oddities {
   background-color: rgb(242, 169, 60);
+}
+
+.hover-1 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/7f08d517-5139-4dee-bd91-58d474cfbbc4.sized-1000x1000.png');
+}
+
+.hover-2 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/0bf43c3d-3079-43d4-9775-22f42cc8e2e8.sized-1000x1000.png');
+}
+
+.hover-3 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/f388f9f2-2b4d-45dd-88cd-40c8f0486aef.sized-1000x1000.png');
+}
+
+.hover-4 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/39575fc3-5d43-4e14-94ac-bf481aea1a1b.sized-1000x1000.png');
+}
+
+.hover-5 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/772c952f-d6da-40af-85a4-2cb5ecae5251.sized-1000x1000.png');
+}
+
+.hover-6 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/8d9107e8-200c-45e4-8038-56ab191a884d.sized-1000x1000.png');
+}
+
+.hover-7 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/dc77a329-0468-4e0f-aad3-8499897b90ab.sized-1000x1000.png');
+}
+
+.hover-8 {
+  background-image: url('https://snworksceo.imgix.net/dpn-34s/274fdf13-81ec-4b04-8f08-8431710f2977.sized-1000x1000.png');
 }
 
 @media only screen and (max-width: 768px) {
