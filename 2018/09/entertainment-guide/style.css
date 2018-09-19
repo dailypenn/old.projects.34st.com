@@ -11,6 +11,11 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
+h3 {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
 section {
   min-height: 100vh;
   display: flex;
@@ -85,8 +90,7 @@ p.presented-by {
 
 .listings {
   width: 33.3333%;
-  height: calc(100vh - 40px);
-  padding: 20px;
+  height: 100vh;
   overflow-y: auto;
 }
 
@@ -98,7 +102,8 @@ p.presented-by {
 
 .item {
   border-bottom: 1px solid #000;
-  padding: 20px 0;
+  padding: 20px;
+  cursor: pointer;
 }
 
 p.address {
@@ -106,6 +111,43 @@ p.address {
   font-style: italic;
   margin: 0;
   margin-top: 10px;
+}
+
+.movie {
+  background-color: rgb(254, 240, 55);
+}
+
+.playhouses {
+  background-color: rgb(22, 138, 167);
+  color: #FFF;
+}
+
+.music {
+  background-color: rgb(8, 61, 82);
+  color: #FFF;
+}
+
+.performance {
+  background-color: rgb(12, 18, 21);
+  color: #FFF;
+}
+
+.weekend {
+  background-color: rgb(76, 93, 99);
+}
+
+.museums {
+  background-color: rgb(10, 83, 103);
+  color: #FFF;
+}
+
+.places {
+  background-color: rgb(22, 136, 170);
+}
+
+.oddities {
+  background-color: #000;
+  color: #FFF;
 }
 
 @media only screen and (max-width: 768px) {

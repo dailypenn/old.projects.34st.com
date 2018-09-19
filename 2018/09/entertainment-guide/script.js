@@ -1,6 +1,7 @@
 var filmTV = {
   type: "FeatureCollection",
   category: "filmTV",
+  name: "Movie Theaters",
   color: "rgb(254, 240, 55)",
   features: [
     {
@@ -11,8 +12,8 @@ var filmTV = {
       },
       properties: {
         title: "Ritz Theaters",
+        category: "Movie Theaters",
         address:"400 Ranstead Street",
-        blurb: "Blurb for Ritz",
         "marker-size": "large"
       }
     },
@@ -71,6 +72,7 @@ var filmTV = {
 var liveTheater = {
   type: "FeatureCollection",
   category: "liveTheater",
+  name: "Playhouses &amp; Theaters",
   color: "rgb(22, 138, 167)",
   features: [
     {
@@ -81,8 +83,8 @@ var liveTheater = {
       },
       properties: {
         title: "Walnut Street Theater",
+        category: "Playhouses &amp; Theaters",
         address:"825 Walnut Street",
-        blurb: "Blurb for Lucky's Last Chance",
         "marker-size": "large"
       }
     },
@@ -95,30 +97,6 @@ var liveTheater = {
       properties: {
         title: "Arden Theater",
         address:"40 N. Second Street",
-        "marker-size": "large"
-      }
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-75.1487463,39.941247]
-      },
-      properties: {
-        title: "Theater of Living Arts ",
-        address:"334 South Street",
-        "marker-size": "large"
-      }
-    },
-    {
-      type: "Feature",
-      geometry: {
-        type: "Point",
-        coordinates: [-75.155349,39.961406]
-      },
-      properties: {
-        title: "Union Transfer",
-        address:"1026 Spring Garden Street",
         "marker-size": "large"
       }
     },
@@ -224,6 +202,7 @@ var liveTheater = {
 var musicVenues = {
   type: "FeatureCollection",
   category: "musicVenues",
+  name: "Music Venues",
   color: "rgb(8, 61, 82)",
   features: [
     {
@@ -234,8 +213,20 @@ var musicVenues = {
       },
       properties: {
         title: "Union Transfer",
+        category: "Music Venues",
         address:"1026 Spring Garden Street",
-        blurb: "Blurb for Lucky's Last Chance",
+        "marker-size": "large"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1487463,39.941247]
+      },
+      properties: {
+        title: "Theater of Living Arts ",
+        address:"334 South Street",
         "marker-size": "large"
       }
     },
@@ -425,6 +416,7 @@ var musicVenues = {
 var performanceVenues = {
   type: "FeatureCollection",
   category: "performanceVenues",
+  name: "Performance Venues",
   color: "rgb(12, 18, 21)",
   features: [
     {
@@ -435,8 +427,8 @@ var performanceVenues = {
       },
       properties: {
         title: "The Victoria Freehouse",
+        category: "Performance Venues",
         address:"2031 Sansom Street",
-        blurb: "Blurb for Lucky's Last Chance",
         "marker-size": "large"
       }
     },
@@ -542,6 +534,7 @@ var performanceVenues = {
 var interactiveExperiences = {
   type: "FeatureCollection",
   category: "interactiveExperiences",
+  name: "Weekend Plans",
   color: "rgb(76, 93, 99)",
   features: [
     {
@@ -552,8 +545,8 @@ var interactiveExperiences = {
       },
       properties: {
         title: "VR at Mad Rex",
+        category: "Weekend Plans",
         address:"1000 Frankford Avenue",
-        blurb: "Blurb for Lucky's Last Chance",
         "marker-size": "large"
       }
     },
@@ -648,7 +641,7 @@ var interactiveExperiences = {
         coordinates: [-75.1696549,39.9439936]
       },
       properties: {
-        title: "Philadlephia Dance Fitness",
+        title: "Philadelphia Dance Fitness",
         address:"1624 South Street, Rittenhouse Square",
         "marker-size": "large"
       }
@@ -695,6 +688,7 @@ var interactiveExperiences = {
 var arts = {
   type: "FeatureCollection",
   category: "arts",
+  name: "Museums &amp; Galleries",
   color: "rgb(10, 83, 103)",
   features: [
     {
@@ -705,8 +699,8 @@ var arts = {
       },
       properties: {
         title: "PAFA Musuem",
+        category: "Museums &amp; Galleries",
         address:"118-128 Broad Street",
-        blurb: "Blurb for Lucky's Last Chance",
         "marker-size": "large"
       }
     },
@@ -908,6 +902,7 @@ var arts = {
 var dance = {
   type: "FeatureCollection",
   category: "dance",
+  name: "Places to Dance",
   color: "rgb(22, 136, 170)",
   features: [
     {
@@ -918,8 +913,8 @@ var dance = {
       },
       properties: {
         title: "The Barbary",
+        category: "Places to Dance",
         address:"951 Frankford Avenue",
-        blurb: "Blurb for Lucky's Last Chance",
         "marker-size": "large"
       }
     },
@@ -1025,6 +1020,7 @@ var dance = {
 var novelties = {
   type: "FeatureCollection",
   category: "novelties",
+  name: "Oddities",
   color: "rgb(0, 0, 0)",
   features: [
     {
@@ -1035,8 +1031,8 @@ var novelties = {
       },
       properties: {
         title: "Mutter Museum",
+        category: "Oddities",
         address:"3001, 19 S 22nd St",
-        blurb: "Blurb for Lucky's Last Chance",
         "marker-size": "large"
       }
     },
@@ -1172,13 +1168,23 @@ map.on('load', () => {
 });
 
 // create listings and add listing click listeners
+let categoryClass;
 for (let i in dataArray) {
   const feature = dataArray[i];
+  const prop = feature.properties;
+
+  // if this is the first feature for this category, add the header
+  if (prop.category) {
+    categoryClass = prop.category.toLowerCase().split(' ')[0];
+    const category = listings.appendChild(document.createElement('div'));
+    category.className = `category ${categoryClass}`;
+    category.innerHTML = `<h3>${prop.category}</h3>`;
+  }
+
   const listing = listings.appendChild(document.createElement('div'));
-  listing.className = 'item';
+  listing.className = `item ${categoryClass}`;
   listing.position = i;
 
-  const prop = feature.properties;
   const title = listing.appendChild(document.createElement('h4'));
   title.className = 'title';
   title.innerHTML = prop.title;
