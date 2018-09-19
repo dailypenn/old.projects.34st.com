@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,400i');
 
 body {
   margin: 0;
+  font-family: 'Opens Sans', sans-serif;
 }
 
 h1, h2, h3, h4 {
@@ -16,6 +17,48 @@ section {
   flex-direction: row;
 }
 
+.nav {
+  background-color: #222;
+  text-align: center;
+}
+
+.street-link {
+  margin: auto;
+}
+
+.street-logo {
+  margin: auto;
+  height: 20px;
+  padding: 10px;
+}
+
+.intro {
+  min-height: 50vh;
+  height: 50vh;
+  flex-direction: column;
+}
+
+.intro-title {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+p.presented-by {
+  text-align: center;
+  font-style: italic;
+}
+
+.intro-blurb {
+  width: 40%;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.top-categories {
+  background-color: #DDD;
+}
+
 .categories {
   width: 70%;
   height: 100%;
@@ -27,20 +70,12 @@ section {
 
 .col-6 {
   width: 50%;
-  height: 100px;
-  background-color: blue;
 }
 
-.col-6:nth-of-type(4n+1) {
-  background-color: red;
-}
-
-.col-6:nth-of-type(4n+2) {
-  background-color: yellow;
-}
-
-.col-6:nth-of-type(4n+3) {
-  background-color: purple;
+.col-6 img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .map {
@@ -67,7 +102,7 @@ section {
 }
 
 p.address {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Opens Sans', sans-serif;
   font-style: italic;
   margin: 0;
   margin-top: 10px;
@@ -78,7 +113,19 @@ p.address {
     flex-direction: column;
   }
 
+  .intro {
+    margin: 15px;
+  }
+
+  .intro-blurb {
+    width: 100%;
+  }
+
   .categories {
+    width: 100%;
+  }
+
+  .col-6 {
     width: 100%;
   }
 
@@ -88,7 +135,7 @@ p.address {
   }
 
   .listings {
-    width: 100%;
+    width: calc(100% - 40px);
     height: 35vh;
   }
 }
