@@ -185,6 +185,10 @@ hr {
   color: #326522;
 }
 
+.narrative-col{
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 480px) {
   .intro {
     width: 100%;
