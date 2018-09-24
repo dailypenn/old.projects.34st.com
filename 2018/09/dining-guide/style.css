@@ -1,30 +1,12 @@
-@font-face {
-font-family:"Bodoni";
-src: url("https://use.typekit.net/af/1db0a1/000000000000000000010b16/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1db0a1/000000000000000000010b16/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1db0a1/000000000000000000010b16/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-font-style: normal;
-font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1426a3/00000000000000003b9b0934/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Proxima Nova';
-  src: url("https://use.typekit.net/af/6756a2/00000000000000003b9b0935/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/6756a2/00000000000000003b9b0935/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/6756a2/00000000000000003b9b0935/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
-  font-style: italic;
-  font-weight: 400;
-}
+/* Proxima Nova and Bodoni */
+@import url("https://use.typekit.net/exr6dnn.css");
 
 body {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
 }
 
 h1, h2, h3 {
-  font-family: 'Bodoni';
+  font-family: 'ltc-bodoni-175';
 }
 
 h1, h2 {
@@ -87,11 +69,11 @@ hr {
 }
 
 #map.mapboxgl-map {
-  font-family: 'Proxima Nova';
+  font-family: 'proxima-nova';
 }
 
 #map.mapboxgl-map h4 {
-  font-family: 'Bodoni';
+  font-family: 'ltc-bodoni-175';
   margin-top: 10px;
 }
 
