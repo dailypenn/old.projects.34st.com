@@ -9,8 +9,12 @@ h1, h2, h3 {
   font-family: 'ltc-bodoni-175';
 }
 
-h1, h2 {
-  color: #326522;
+h1 {
+  color: rgb(232,75,59);
+}
+
+h2 {
+  color: black;
 }
 
 h5, h6 {
@@ -22,7 +26,7 @@ h5 {
 }
 
 h6.title {
-  color: #326522;
+  color: rgb(232,75,59);
 }
 
 footer {
@@ -35,7 +39,7 @@ img {
 }
 
 a, a:hover, a:focus {
-  color: #326522;
+  color: rgb(232,75,59);
   text-decoration: none;
 }
 
@@ -45,13 +49,26 @@ a:hover, a:focus {
 
 p.italics {
   font-style: italic;
+  color: rgb(232,75,59);
 }
 
 hr {
   width: 1140px;
   max-width: 100%;
   margin: 20px auto;
-  border-top: 3px solid #326522;
+  border-top: 3px solid rgb(232,75,59);
+}
+
+.background-container {
+  background-color: rgba(0,0,0,0.05);
+}
+
+.background-container-reviews {
+  background-color: rgba(252,219,122,0.3);
+}
+
+.container {
+  margin-top: 30px;
 }
 
 .intro {
@@ -101,7 +118,7 @@ hr {
 
 .item {
   cursor: pointer;
-  border-top: 1px solid #326522;
+  border-top: 1px solid rgb(232,75,59);
   padding-top: 15px;
 }
 
@@ -129,12 +146,23 @@ hr {
   color: #000;
 }
 
+.nav {
+  background-color: #222;
+  text-align: center;
+}
+
 .street-link {
-  margin: 30px 0 0 30px;
+  margin: auto;
+}
+
+.street-logo {
+  margin: auto;
+  height: 40px;
+  padding: 10px;
 }
 
 .lg-underline, .underline2, .underline3 {
-  border-top: 2px solid #326522;
+  border-top: 2px solid rgb(232,75,59);
   margin: 20px auto;
 }
 
@@ -159,16 +187,43 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #326522;
+  color: black;
 }
 
 .title-see-more a {
   text-decoration: none;
-  color: #326522;
+  color: black;
 }
 
-.narrative-col{
-  margin-top: 30px;
+.col-left {
+  width: 50%;
+  padding: 20px;
+}
+
+.col-right {
+  width: 50%;
+  padding: 20px;
+}
+
+.narrative-row-1{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color:rgb(237,236,234);
+}
+
+.narrative-row-2{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color:rgb(232,75,59);
+}
+
+.narrative-row-3{
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color:rgb(252,219,122);
 }
 
 @media screen and (max-width: 480px) {

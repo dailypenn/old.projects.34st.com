@@ -148,7 +148,7 @@ var geojson = {
         coordinates: [-75.16687329999999,39.9502275]
       },
       properties: {
-        title: "Line Cook",
+        title: "Hungry Pigeon",
         url: "",
         address:"1526 Sansom St",
         "marker-color": "#326522",
