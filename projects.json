@@ -1,9 +1,20 @@
 {
   "featured": [
     {
+      "title": "Dining Guide Fall 2018",
+      "author": "Web Dev: Jess Peng, Alex Graves, Daniel Salib",
+      "section": "guides",
+      "date": "September 2018",
+      "description": "Foodies rejoice! Dining Guide is back, and just in time for restaurant week. This semester, we’re branching out and exploring the full realm of food journalism, from restaurant reviews to personal essays. Everything is food related, but you might just be surprised by what you find inside…",
+      "sponsored": false,
+      "link": "https://projects.34st.com/2018/09/dining-guide/",
+      "image": "https://snworksceo.imgix.net/dpn-34s/0129c4ee-d3e2-40f7-8b02-f9f4a5fb00b3.sized-1000x1000.png",
+      "alt": "dining guide fall 2018"
+    },
+    {
       "title": "Entertainment Guide 2018: Philadelphia, Curated",
       "author": "Web Dev: Alex Graves, Jess Peng, Daniel Salib",
-      "section": "Projects",
+      "section": "guides",
       "date": "September 2018",
       "description": "For our Philadelphia, Curated issue, we spotlighted our favorite Philadelphia haunts that we wanted to share with our readers. From music venues and art galleries to comedy clubs and playhouses, we wanted to show you the best of what the city has to offer.",
       "sponsored": false,
@@ -14,14 +25,16 @@
     {
       "title": "Penn 10: Penn’s younger, cooler, 30 under 30",
       "author": "Web Dev: Daniel Salib",
-      "section": "Projects",
+      "section": "projects",
       "date": "April 2018",
       "description": "Penn 10 is a collection of student profiles spotlighting members of the senior class that have done incredible work during their time here.",
       "sponsored": false,
       "link": "https://projects.34st.com/2018/04/penn10/",
       "image": "https://snworksceo.imgix.net/dpn-34s/0f8db408-cea2-4b2a-9be8-79c148e54e09.sized-1000x1000.png",
       "alt": "penn10 2018"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Dining Guide Spring 2018",
       "author": "Web Dev: Jamie Tomlinson, Daniel Salib",
@@ -32,13 +45,11 @@
       "link": "https://projects.34st.com/2018/03/dining-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/64c957e2-08b3-499d-8330-edc882eb85a3.sized-1000x1000.png",
       "alt": "dining guide spring 2018"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Love Issue 2018",
       "author": "Web Dev: Jamie Tomlinson, Alex Graves",
-      "section": "guides",
+      "section": "projects",
       "date": "February 2018",
       "description": "For Valentine's Day this year, we wanted to collect stories that gestured at the reality of love as we feel it: messy, sticky, weird, and something we can't claim to fully understand.",
       "sponsored": false,
@@ -71,7 +82,7 @@
     {
       "title": "Penn10: Ten of Penn's Most Impressive Seniors",
       "author": "Web Dev: Andrew Fischer",
-      "section": "Projects",
+      "section": "projects",
       "date": "April 2017",
       "description": "Read about ten of Penn's extraordinary seniors, brought to you by 34th Street and made possible by Penn Alumni.",
       "sponsored": false,

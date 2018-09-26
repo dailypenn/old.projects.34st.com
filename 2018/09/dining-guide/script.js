@@ -10,9 +10,7 @@ var geojson = {
       properties: {
         title: "Menagerie",
         // url: "",
-        address:"18 S 3rd Street",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"18 S 3rd Street"
       }
     },
     {
@@ -24,9 +22,7 @@ var geojson = {
       properties: {
         title: "Cafe Ole",
         // url: "",
-        address:"147 N 3rd Street",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"147 N 3rd Street"
       }
     },
     {
@@ -38,9 +34,7 @@ var geojson = {
       properties: {
         title: "One Shot Cafe",
         // url: "",
-        address:"217 W George Street",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"217 W George Street"
       }
     },
     {
@@ -52,9 +46,7 @@ var geojson = {
       properties: {
         title: "Chapterhouse Cafe",
         // url: "",
-        address:"620 S 9th Street",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"620 S 9th Street"
       }
     },
     {
@@ -66,9 +58,7 @@ var geojson = {
       properties: {
         title: "Uncle Bobbie's",
         // url: "",
-        address:"5445 Germantown Avenue",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"5445 Germantown Avenue"
       }
     },
     {
@@ -80,9 +70,7 @@ var geojson = {
       properties: {
         title: "Asia Crafts",
         // url: "",
-        address:"124 N 10th St",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"124 N 10th St"
       }
     },
     {
@@ -94,9 +82,7 @@ var geojson = {
       properties: {
         title: "Ting Wong",
         // url: "",
-        address:"138 N 10th St",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"138 N 10th St"
       }
     },
     {
@@ -108,9 +94,7 @@ var geojson = {
       properties: {
         title: "KC Pastries",
         // url: "",
-        address:"109 N 10th St",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"109 N 10th St"
       }
     },
     {
@@ -122,9 +106,7 @@ var geojson = {
       properties: {
         title: "Mr. Wish",
         // url: "",
-        address:"216 N 10th St",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"216 N 10th St"
       }
     },
     {
@@ -136,9 +118,7 @@ var geojson = {
       properties: {
         title: "Reading Terminal",
         // url: "",
-        address:"51 N 12th St",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"51 N 12th St"
       }
     },
     {
@@ -150,9 +130,223 @@ var geojson = {
       properties: {
         title: "Hungry Pigeon",
         // url: "",
-        address:"1526 Sansom St",
-        "marker-color": "#326522",
-        "marker-size": "large"
+        address:"1526 Sansom St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1404232,39.9671493]
+      },
+      properties: {
+        title: "Chalaco's",
+        // url: "",
+        address:"1030 N 2nd St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.138391,39.969505]
+      },
+      properties: {
+        title: "Cadence",
+        // url: "",
+        address:"161 W Girard Ave"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1439592,39.9494184]
+      },
+      properties: {
+        title: "Vista Peru",
+        // url: "",
+        address:"20 S 2nd St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1628263,39.9301148]
+      },
+      properties: {
+        title: "Redcrest Fried Chicken",
+        // url: "",
+        address:"1525 S 11th St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1632139,39.9284176]
+      },
+      properties: {
+        title: "Mike's BBQ",
+        // url: "",
+        address:"1703 S 11th St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1779537,39.9488052]
+      },
+      properties: {
+        title: "Trattoria Carina",
+        // url: "",
+        address:"2201 Spruce St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.171175,39.939514]
+      },
+      properties: {
+        title: "L'Anima",
+        // url: "",
+        address:"1001 S 17th St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1695409,39.9493777]
+      },
+      properties: {
+        title: "The Finch",
+        // url: "",
+        address:"220 S 17th St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1665541,39.9502251]
+      },
+      properties: {
+        title: "Oyster House",
+        // url: "",
+        address:"1516 Sansom St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1579469,39.9463052]
+      },
+      properties: {
+        title: "Kanella Grill",
+        // url: "",
+        address:"1001 Spruce St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.0554792,40.0620871]
+      },
+      properties: {
+        title: "Lipkin's Bakery",
+        // url: "",
+        address:"8013 Castor Ave"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.147583,39.9488411]
+      },
+      properties: {
+        title: "Chez Ben",
+        // url: "",
+        address:"400 Chestnut St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.169897,39.9523973]
+      },
+      properties: {
+        title: "Harper's Garden",
+        // url: "",
+        address:"31 S 18th St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1643311,39.9630572]
+      },
+      properties: {
+        title: "Heffe Taco",
+        // url: "",
+        address:"1543 Spring Garden St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1474808,39.9409542]
+      },
+      properties: {
+        title: "Ngon Ngon",
+        // url: "",
+        address:"615 S 3rd St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1765402,39.9510946]
+      },
+      properties: {
+        title: "Talk",
+        // url: "",
+        address:"2121 Walnut St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1668733,39.9502275]
+      },
+      properties: {
+        title: "The Rooster",
+        // url: "",
+        address:"1526 Sansom St"
+      }
+    },
+    {
+      type: "Feature",
+      geometry: {
+        type: "Point",
+        coordinates: [-75.1569322,39.955723]
+      },
+      properties: {
+        title: "Hop Sing Laundromat",
+        // url: "",
+        address:"1029 Race St"
       }
     }
   ]
@@ -164,7 +358,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiZHB3ZWJkZXYiLCJhIjoiY2pmYmN2dDB4MWNoYjRlcTdjM
 const map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/dpwebdev/cjfbcjxzi69w52rk936tb9lyu',
-  center: [-75.1604066,39.9431914],
+  center: [-75.1684066,39.9551914],
   zoom: 13,
   scrollZoom: false
 });

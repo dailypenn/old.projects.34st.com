@@ -5,7 +5,7 @@ body {
   font-family: 'proxima-nova';
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'ltc-bodoni-175';
 }
 
@@ -74,34 +74,27 @@ hr {
   color: rgb(232,75,59);
 }
 
-#map {
-  width: 100%;
+.map-container {
+  display: flex;
+}
+
+.map {
+  width: 66.6667%;
   height: 100vh;
 }
 
-#map.mapboxgl-map {
-  font-family: 'proxima-nova';
-}
-
-#map.mapboxgl-map h4 {
-  font-family: 'ltc-bodoni-175';
-  margin-top: 10px;
+.listings {
+  width: 33.3333%;
+  height: 100vh;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: rgb(252,219,122);
 }
 
 .street-logo {
   margin: auto;
   height: 50px;
   padding: 10px;
-}
-
-.listings {
-  width: 33%;
-  height: 100vh;
-  position: absolute;
-  z-index: 1000;
-  padding: 15px;
-  overflow-y: auto;
-  background-color: rgb(252,219,122);
 }
 
 .address {
@@ -245,14 +238,18 @@ hr {
     margin-bottom: 0;
   }
 
-  .listing-box {
-    position: relative;
+  .map-container {
+    flex-direction: column-reverse;
+  }
+
+  .map {
+    width: 100%;
+    height: 67vh;
   }
 
   .listings {
     width: 100%;
     height: 33vh;
-    top: 67vh;
   }
 
   .narrative-row {
