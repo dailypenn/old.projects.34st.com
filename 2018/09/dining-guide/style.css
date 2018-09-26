@@ -13,6 +13,10 @@ h1, h4 {
   color: rgb(232,75,59);
 }
 
+h1 {
+  text-align: center;
+}
+
 h2 {
   color: black;
 }
@@ -55,21 +59,19 @@ hr {
 }
 
 .container {
-  padding: 50px 15px;
+  padding: 100px 15px;
 }
 
 .intro {
   width: 50%;
   margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .letter-link {
   font-style: italic;
   color: rgb(232,75,59);
-}
-
-.map-container {
-  margin-top: 50px;
 }
 
 #map {
@@ -90,12 +92,6 @@ hr {
   margin: auto;
   height: 50px;
   padding: 10px;
-}
-
-.featured {
-  padding-top: 10px;
-  margin: auto;
-  text-align: center;
 }
 
 .listings {
@@ -138,8 +134,16 @@ hr {
   margin: 0 auto 10px;
 }
 
+.featured {
+  margin-bottom: 50px;
+}
+
 .image-row {
-  margin: 50px -15px;
+  text-align: center;
+}
+
+.image-row {
+  margin-top: 50px;
 }
 
 .image-row a {
@@ -179,11 +183,11 @@ hr {
 }
 
 .food-section {
-  margin-top: 50px;
   text-align: center;
 }
 
 .title-see-more {
+  margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -209,7 +213,7 @@ hr {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding: 50px 15px;
+  padding: 100px 15px;
 }
 
 .grey {
@@ -237,6 +241,10 @@ hr {
     height: 300px;
   }
 
+  .featured {
+    margin-bottom: 0;
+  }
+
   .listing-box {
     position: relative;
   }
@@ -250,6 +258,14 @@ hr {
   .narrative-row {
     min-height: auto;
     flex-direction: column;
+  }
+
+  .image-row {
+    margin-top: 0;
+  }
+
+  .col-md {
+    margin-bottom: 20px;
   }
 
   .col-left, .col-right {
