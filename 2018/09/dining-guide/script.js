@@ -9,7 +9,7 @@ var geojson = {
       },
       properties: {
         title: "Menagerie",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-philly-coffee-shops",
         address:"18 S 3rd Street"
       }
     },
@@ -21,7 +21,7 @@ var geojson = {
       },
       properties: {
         title: "Cafe Ole",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-philly-coffee-shops",
         address:"147 N 3rd Street"
       }
     },
@@ -33,7 +33,7 @@ var geojson = {
       },
       properties: {
         title: "One Shot Cafe",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-philly-coffee-shops",
         address:"217 W George Street"
       }
     },
@@ -45,7 +45,7 @@ var geojson = {
       },
       properties: {
         title: "Chapterhouse Cafe",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-philly-coffee-shops",
         address:"620 S 9th Street"
       }
     },
@@ -57,7 +57,7 @@ var geojson = {
       },
       properties: {
         title: "Uncle Bobbie's",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-philly-coffee-shops",
         address:"5445 Germantown Avenue"
       }
     },
@@ -69,7 +69,7 @@ var geojson = {
       },
       properties: {
         title: "Asia Crafts",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-chinatown-planned-philadephia",
         address:"124 N 10th St"
       }
     },
@@ -81,7 +81,7 @@ var geojson = {
       },
       properties: {
         title: "Ting Wong",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-chinatown-planned-philadephia",
         address:"138 N 10th St"
       }
     },
@@ -93,7 +93,7 @@ var geojson = {
       },
       properties: {
         title: "KC Pastries",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-chinatown-planned-philadephia",
         address:"109 N 10th St"
       }
     },
@@ -105,7 +105,7 @@ var geojson = {
       },
       properties: {
         title: "Mr. Wish",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-chinatown-planned-philadephia",
         address:"216 N 10th St"
       }
     },
@@ -117,7 +117,7 @@ var geojson = {
       },
       properties: {
         title: "Reading Terminal",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/reading-terminal-roundup-dont-miss-these-8-eateries-america-food-halls-famous-philadelphia",
         address:"51 N 12th St"
       }
     },
@@ -129,7 +129,7 @@ var geojson = {
       },
       properties: {
         title: "Hungry Pigeon",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/your-life-as-a-line-cook-hungry-pigeon-philadelphia-best-restaurant",
         address:"1526 Sansom St"
       }
     },
@@ -141,7 +141,7 @@ var geojson = {
       },
       properties: {
         title: "Chalaco's",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-zovinar-khrimian-chalaco-peruvian-ceviche-pisco",
         address:"1030 N 2nd St"
       }
     },
@@ -153,7 +153,7 @@ var geojson = {
       },
       properties: {
         title: "Cadence",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-cadence-philadelphia-food-south-kensington-fishtown",
         address:"161 W Girard Ave"
       }
     },
@@ -165,7 +165,7 @@ var geojson = {
       },
       properties: {
         title: "Vista Peru",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-vista-peru-philadelphia-restaurants",
         address:"20 S 2nd St"
       }
     },
@@ -177,7 +177,7 @@ var geojson = {
       },
       properties: {
         title: "Redcrest Fried Chicken",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-daniel-bulpitt-redcrest-friend-chicken",
         address:"1525 S 11th St"
       }
     },
@@ -189,7 +189,7 @@ var geojson = {
       },
       properties: {
         title: "Mike's BBQ",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-mikes-bbq-southern-hospitality-11th-street-brisket-ribs-cheesesteak",
         address:"1703 S 11th St"
       }
     },
@@ -201,7 +201,7 @@ var geojson = {
       },
       properties: {
         title: "Trattoria Carina",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-eliana-doft-trattoria-carina",
         address:"2201 Spruce St"
       }
     },
@@ -213,7 +213,7 @@ var geojson = {
       },
       properties: {
         title: "L'Anima",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-emily-schwartz-lanima",
         address:"1001 S 17th St"
       }
     },
@@ -225,7 +225,7 @@ var geojson = {
       },
       properties: {
         title: "The Finch",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-spice-finch-hailey-noh",
         address:"220 S 17th St"
       }
     },
@@ -237,7 +237,7 @@ var geojson = {
       },
       properties: {
         title: "Oyster House",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-oyster-house-philadelphia-food-shellfish",
         address:"1516 Sansom St"
       }
     },
@@ -249,7 +249,7 @@ var geojson = {
       },
       properties: {
         title: "Kanella Grill",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-angie-lin-kanella-grill",
         address:"1001 Spruce St"
       }
     },
@@ -261,7 +261,7 @@ var geojson = {
       },
       properties: {
         title: "Lipkin's Bakery",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-caroline-riise-lipkins-bakery",
         address:"8013 Castor Ave"
       }
     },
@@ -273,7 +273,7 @@ var geojson = {
       },
       properties: {
         title: "Chez Ben",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-chez-ben-french-food-philadelphia",
         address:"400 Chestnut St"
       }
     },
@@ -285,7 +285,7 @@ var geojson = {
       },
       properties: {
         title: "Harper's Garden",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-harpers-garden-old-city-food-philadelphia",
         address:"31 S 18th St"
       }
     },
@@ -297,7 +297,7 @@ var geojson = {
       },
       properties: {
         title: "Heffe Taco",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-heffe-tacos-philadelphia-mexican-food",
         address:"1543 Spring Garden St"
       }
     },
@@ -309,7 +309,7 @@ var geojson = {
       },
       properties: {
         title: "Ngon Ngon",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-ngon-ngon-philadelphia-food",
         address:"615 S 3rd St"
       }
     },
@@ -321,7 +321,7 @@ var geojson = {
       },
       properties: {
         title: "Talk",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-paige-fishman-talk",
         address:"2121 Walnut St"
       }
     },
@@ -333,7 +333,7 @@ var geojson = {
       },
       properties: {
         title: "The Rooster",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-the-rooster-annabelle-williams",
         address:"1526 Sansom St"
       }
     },
@@ -345,7 +345,7 @@ var geojson = {
       },
       properties: {
         title: "Hop Sing Laundromat",
-        // url: "",
+        url: "https://www.34st.com/article/2018/09/dining-guide-fall-2018-hop-sing-laundromat-philadelphia",
         address:"1029 Race St"
       }
     }
@@ -385,8 +385,8 @@ map.on('load', () => {
   map.on('click', 'restaurants', e => {
     const coordinates = e.features[0].geometry.coordinates.slice();
     const prop = e.features[0].properties;
-    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p>`;
-    // add this: <a href="${prop.url}" target="_blank">Read more »</a>
+    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p><a href=${prop.url} target="_blank">Read more »</a>`;
+
 
     popups.push(new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map));
   });
@@ -421,8 +421,7 @@ for (let i in geojson.features) {
   listing.addEventListener('click', function(e) {
     const curr = geojson.features[this.position];
     const prop = curr.properties;
-    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p>`;
-    // add this: <a href="${prop.url}" target="_blank">Read more »</a>
+    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p><a href=${prop.url} target="_blank">Read more »</a>`;
     const coordinates = curr.geometry.coordinates;
 
     // clear popups so we only have one on the map at once
