@@ -217,12 +217,20 @@ hr {
   background-color: rgb(232,75,59);
 }
 
+.red h3:hover{
+  color: rgb(250,230,122);
+}
+
 .red h3 {
   color: rgb(252,219,122);
 }
 
 .yellow {
   background-color: rgb(252,219,122);
+}
+
+.yellow h3:hover{
+  color: rgb(255,70,60);
 }
 
 @media screen and (max-width: 480px) {
