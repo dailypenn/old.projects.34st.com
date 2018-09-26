@@ -9,7 +9,7 @@ var geojson = {
       },
       properties: {
         title: "Menagerie",
-        url: "",
+        // url: "",
         address:"18 S 3rd Street",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -23,7 +23,7 @@ var geojson = {
       },
       properties: {
         title: "Cafe Ole",
-        url: "",
+        // url: "",
         address:"147 N 3rd Street",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -37,7 +37,7 @@ var geojson = {
       },
       properties: {
         title: "One Shot Cafe",
-        url: "",
+        // url: "",
         address:"217 W George Street",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -51,7 +51,7 @@ var geojson = {
       },
       properties: {
         title: "Chapterhouse Cafe",
-        url: "",
+        // url: "",
         address:"620 S 9th Street",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -65,7 +65,7 @@ var geojson = {
       },
       properties: {
         title: "Uncle Bobbie's",
-        url: "",
+        // url: "",
         address:"5445 Germantown Avenue",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -79,7 +79,7 @@ var geojson = {
       },
       properties: {
         title: "Asia Crafts",
-        url: "",
+        // url: "",
         address:"124 N 10th St",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -93,7 +93,7 @@ var geojson = {
       },
       properties: {
         title: "Ting Wong",
-        url: "",
+        // url: "",
         address:"138 N 10th St",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -107,7 +107,7 @@ var geojson = {
       },
       properties: {
         title: "KC Pastries",
-        url: "",
+        // url: "",
         address:"109 N 10th St",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -121,7 +121,7 @@ var geojson = {
       },
       properties: {
         title: "Mr. Wish",
-        url: "",
+        // url: "",
         address:"216 N 10th St",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -135,7 +135,7 @@ var geojson = {
       },
       properties: {
         title: "Reading Terminal",
-        url: "",
+        // url: "",
         address:"51 N 12th St",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -149,7 +149,7 @@ var geojson = {
       },
       properties: {
         title: "Hungry Pigeon",
-        url: "",
+        // url: "",
         address:"1526 Sansom St",
         "marker-color": "#326522",
         "marker-size": "large"
@@ -191,7 +191,8 @@ map.on('load', () => {
   map.on('click', 'restaurants', e => {
     const coordinates = e.features[0].geometry.coordinates.slice();
     const prop = e.features[0].properties;
-    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p><a href="${prop.url}" target="_blank">Read more »</a>`;
+    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p>`;
+    // add this: <a href="${prop.url}" target="_blank">Read more »</a>
 
     popups.push(new mapboxgl.Popup().setLngLat(coordinates).setHTML(text).addTo(map));
   });
@@ -226,7 +227,8 @@ for (let i in geojson.features) {
   listing.addEventListener('click', function(e) {
     const curr = geojson.features[this.position];
     const prop = curr.properties;
-    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p><a href="${prop.url}" target="_blank">Read more »</a>`;
+    const text = `<h4>${prop.title}</h4><p class="address">${prop.address}</p>`;
+    // add this: <a href="${prop.url}" target="_blank">Read more »</a>
     const coordinates = curr.geometry.coordinates;
 
     // clear popups so we only have one on the map at once
