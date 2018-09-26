@@ -35,7 +35,7 @@ footer {
 }
 
 img {
-  margin: 0px auto 10px;
+  margin: 0 auto 10px;
 }
 
 a, a:hover, a:focus {
@@ -44,12 +44,7 @@ a, a:hover, a:focus {
 }
 
 a:hover, a:focus {
-  color: #a5c639;
-}
-
-p.italics {
-  font-style: italic;
-  color: rgb(232,75,59);
+  color: rgb(252,219,122);
 }
 
 hr {
@@ -64,16 +59,21 @@ hr {
 }
 
 .background-container-reviews {
-  background-color: rgba(252,219,122,0.3);
+  background-color: rgb(252,219,122);
 }
 
 .container {
-  margin-top: 30px;
+  padding: 50px 15px;
 }
 
 .intro {
   width: 50%;
   margin: auto;
+}
+
+.letter-link {
+  font-style: italic;
+  color: rgb(232,75,59);
 }
 
 .map-container {
@@ -113,7 +113,11 @@ hr {
   z-index: 1000;
   padding: 15px;
   overflow-y: auto;
-  background-color: #e8e8de;
+  background-color: rgb(252,219,122);
+}
+
+.address {
+  font-style: italic;
 }
 
 .item {
@@ -133,13 +137,13 @@ hr {
 .img-top {
   height: 400px;
   width: 100%;
-  margin: 20px auto 10px;
+  margin: 0 auto 10px;
 }
 
 .img-square {
   height: 300px;
   width: 100%;
-  margin: 20px auto 10px;
+  margin: 0 auto 10px;
 }
 
 .image-row a {
@@ -196,34 +200,32 @@ hr {
 }
 
 .col-left {
-  width: 50%;
-  padding: 20px;
+  width: 60%;
+  margin: 0 15px 0 60px;
 }
 
 .col-right {
-  width: 50%;
-  padding: 20px;
+  width: 40%;
+  margin: 0 60px 0 15px;
 }
 
-.narrative-row-1{
+.narrative-row {
   display: flex;
   align-items: center;
   min-height: 100vh;
-  background-color:rgb(237,236,234);
+  padding: 50px 15px;
 }
 
-.narrative-row-2{
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  background-color:rgb(232,75,59);
+.narrative-row:nth-of-type(1) {
+  background-color: rgb(237,236,234);
 }
 
-.narrative-row-3{
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-  background-color:rgb(252,219,122);
+.narrative-row:nth-of-type(2) {
+  background-color: rgb(232,75,59);
+}
+
+.narrative-row:nth-of-type(3) {
+  background-color: rgb(252,219,122);
 }
 
 @media screen and (max-width: 480px) {
@@ -243,5 +245,14 @@ hr {
     width: 100%;
     height: 33vh;
     top: 67vh;
+  }
+
+  .narrative-row {
+    flex-direction: column;
+  }
+
+  .col-left, .col-right {
+    width: 100%;
+    margin: auto;
   }
 }
