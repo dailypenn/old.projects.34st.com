@@ -1,0 +1,109 @@
+a, a:hover, a:focus {
+  color: rgb(232,75,59);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: rgb(252,219,122);
+}
+
+.nav {
+  background-color: #222;
+  text-align: center;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.street-link {
+  margin: auto;
+}
+
+.street-logo {
+    margin: auto;
+    height: 40px;
+    padding: 10px;
+}
+
+img {
+  margin: 0 auto 10px;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+.description {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+.row {
+  margin: auto;
+}
+
+.section-header {
+  background-color: lightblue;
+}
+
+.category {
+  text-align: left;
+  background-color: pink;
+}
+
+.image-container {
+  position: relative;
+}
+
+.pick-circle {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transform: rotate(20deg);
+  font-weight: bold;
+  text-align: center;
+  padding-top: 35px;
+  height: 100px;
+  width: 100px;
+  line-height: 1;
+
+
+}
+.runner-up {
+  display: inline-block;
+}
+
+.runner-up.number {
+  background-color: blue;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 6px;
+  height: 50px;
+  width: 50px;
+
+}
+
+.runner-up.text {
+  vertical-align: top;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    width: 100%;
+  }
+}
