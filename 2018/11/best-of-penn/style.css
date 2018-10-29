@@ -30,9 +30,9 @@ h1, h2, h3, h4 {
 }
 
 .street-logo {
-    margin: auto;
-    height: 40px;
-    padding: 10px;
+  margin: auto;
+  height: 40px;
+  padding: 10px;
 }
 
 img {
@@ -47,10 +47,6 @@ img {
   width: 50%;
   margin: auto;
   text-align: center;
-}
-
-.row {
-  margin: auto;
 }
 
 .section-header {
