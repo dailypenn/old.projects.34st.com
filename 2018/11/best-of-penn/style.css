@@ -55,7 +55,8 @@ img {
 
 .category {
   text-align: left;
-  background-color: pink;
+  background-color: #e87e53;
+  width: 50%;
 }
 
 .image-container {
@@ -66,7 +67,7 @@ img {
   position: absolute;
   top: -50px;
   right: 10px;
-  background-color: red;
+  background-color: #03095b;
   border-radius: 50%;
   color: white;
   font-size: 1.1rem;
@@ -78,15 +79,18 @@ img {
   height: 100px;
   width: 100px;
   line-height: 1;
-
-
 }
+
+.penn-pick{
+  background-color: #e87e53
+}
+
 .runner-up {
   display: inline-block;
 }
 
 .runner-up.number {
-  background-color: blue;
+  background-color: #8dbfdc;
   border-radius: 50%;
   color: white;
   font-size: 1.5rem;
