@@ -114,3 +114,19 @@ img {
     width: 100%;
   }
 }
+
+.section-header {
+  font-size: 2.5rem;
+}
+
+.sub-contents {
+  margin: 5px 0 5px 0;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#table-of-contents {
+  text-align: center;
+  font-size: 25px;
+}
