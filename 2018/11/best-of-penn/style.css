@@ -59,13 +59,17 @@ img {
   width: 50%;
 }
 
+.entry-name {
+  margin-bottom: 20px;
+}
+
 .image-container {
   position: relative;
 }
 
 .pick-circle {
   position: absolute;
-  top: -50px;
+  top: -30px;
   right: 10px;
   background-color: #03095b;
   border-radius: 50%;
@@ -75,9 +79,9 @@ img {
   transform: rotate(20deg);
   font-weight: bold;
   text-align: center;
-  padding-top: 35px;
-  height: 100px;
-  width: 100px;
+  padding-top: 30px;
+  height: 90px;
+  width: 90px;
   line-height: 1;
 }
 
