@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow:400,600');
 
+h1, h2, h3, h4 {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h3, h4, .category {
+  text-align: center;
+  padding: 10px;
+}
+
 a, a:hover, a:focus {
   color: rgb(232,75,59);
   text-decoration: none;
@@ -12,15 +21,6 @@ a:hover, a:focus {
 .nav {
   background-color: #222;
   text-align: center;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Barlow', sans-serif;
-}
-
-h1, h3, h4, .category {
-  text-align: center;
-  padding: 10px;
 }
 
 .container {
@@ -56,13 +56,16 @@ img {
   height: 90px;
   width: auto;
   margin: 0;
+  margin-right: 20px;
 }
 
 .section {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .section-header {
@@ -101,7 +104,7 @@ img {
   line-height: 1;
 }
 
-.penn-pick{
+.penn-pick {
   background-color: #e87e53
 }
 
@@ -126,26 +129,31 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .description {
+  .description, .category {
     width: 100%;
   }
-  .category {
-    width: 100%;
+
+  .section {
+    justify-content: flex-end;
   }
-}
 
-.section-header {
-  font-size: 50px;
-}
+  .top-link {
+    margin-left: 20px;
+  }
 
-.sub-contents {
-  margin: 5px 0 5px 0;
-  padding-top: 10px;
-  text-align: left;
-  font-size: 20px;
-}
+  .back-to-top {
+    margin-top: -25px;
+  }
 
-#table-of-contents {
-  text-align: center;
-  font-size: 25px;
+  .table-of-contents {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .sub-contents {
+    margin: 5px 0 5px 0;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 20px;
+  }
 }
