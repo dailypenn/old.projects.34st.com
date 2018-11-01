@@ -15,9 +15,12 @@ a:hover, a:focus {
 }
 
 h1, h2, h3, h4 {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1, h3, h4, .category {
   text-align: center;
   padding: 10px;
-  font-family: 'Barlow', sans-serif;
 }
 
 .container {
@@ -49,8 +52,21 @@ img {
   text-align: center;
 }
 
+.img-icon {
+  height: 90px;
+  width: auto;
+  margin: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .section-header {
-  background-color: lightblue;
+  flex: 1;
 }
 
 .category {
@@ -113,10 +129,13 @@ img {
   .description {
     width: 100%;
   }
+  .category {
+    width: 100%;
+  }
 }
 
 .section-header {
-  font-size: 2.5rem;
+  font-size: 50px;
 }
 
 .sub-contents {
