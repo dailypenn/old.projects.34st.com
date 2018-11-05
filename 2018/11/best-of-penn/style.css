@@ -59,8 +59,15 @@ a:hover, a:focus {
   padding-bottom: 100px;
 }
 
-.intro {
-  padding-bottom: 0;
+.container.ad-container {
+  padding: 0;
+}
+
+.ad {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  padding: 0;
 }
 
 .presented-by {
@@ -182,6 +189,11 @@ a:hover, a:focus {
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .banner {
     height: 25vh;
   }
