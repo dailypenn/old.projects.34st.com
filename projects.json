@@ -1,6 +1,17 @@
 {
   "featured": [
     {
+      "title": "Best of Penn 2018",
+      "author": "Web Dev: Emily Saperstein, Ian Ong, Alex Graves",
+      "section": "guides",
+      "date": "November 2018",
+      "description": "It's that time of year again: Street's annual Best of Penn issue is here. You voted on your favorite food, drinks, shops, occasions, and communities and the results are in. Here are the winners of this year's 26 Best of Penn categories, plus Street staff's favorites for some oppositional fun.",
+      "sponsored": false,
+      "link": "https://projects.34st.com/2018/11/best-of-penn/",
+      "image": "https://snworksceo.imgix.net/dpn/5ede73a3-3fc7-49ed-854d-4afa6d39c369.sized-1000x1000.png",
+      "alt": "best of penn 2018"
+    },
+    {
       "title": "Dining Guide Fall 2018",
       "author": "Web Dev: Jess Peng, Alex Graves, Daniel Salib",
       "section": "guides",
@@ -21,7 +32,9 @@
       "link": "https://projects.34st.com/2018/09/entertainment-guide/",
       "image": "https://snworksceo.imgix.net/dpn-34s/e759393e-0b1b-48d1-85f4-26ee1634f3c1.sized-1000x1000.png",
       "alt": "entertainment guide 2018"
-    },
+    }
+  ],
+  "articles": [
     {
       "title": "Penn 10: Penn’s younger, cooler, 30 under 30",
       "author": "Web Dev: Daniel Salib",
@@ -32,9 +45,7 @@
       "link": "https://projects.34st.com/2018/04/penn10/",
       "image": "https://snworksceo.imgix.net/dpn-34s/0f8db408-cea2-4b2a-9be8-79c148e54e09.sized-1000x1000.png",
       "alt": "penn10 2018"
-    }
-  ],
-  "articles": [
+    },
     {
       "title": "Dining Guide Spring 2018",
       "author": "Web Dev: Jamie Tomlinson, Daniel Salib",

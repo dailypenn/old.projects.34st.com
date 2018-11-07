@@ -4,6 +4,15 @@ body {
   font-family: 'Alegreya Sans', sans-serif;
 }
 
+footer {
+  margin-top: 60px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 40px;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
@@ -120,6 +129,7 @@ a:hover, a:focus {
 
 .entry {
   color: #03095b;
+  margin-bottom: 20px;
 }
 
 .entry-name {
