@@ -1,0 +1,70 @@
+header {
+  background-color: gray;
+  height: 60px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 150px;
+  margin: 50px;
+}
+
+p {
+  font-size: 11px;
+}
+
+.img-fluid {
+  margin-bottom: 20px;
+}
+
+.main-img {
+  width: 60%;
+  height: 60%;
+}
+
+.multimedia-img {
+  width: 50%;
+  height: 50%;
+  margin-top: 30px;
+}
+
+.main-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.subhead {
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 65%;
+  font-size: 30px;
+}
+
+.description {
+  margin: auto;
+  width: 80%;
+}
+
+.intro {
+  margin-bottom: 40px;
+}
+
+.article {
+  margin: 40px;
+}
+
+.section-description {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 50%;
+}
