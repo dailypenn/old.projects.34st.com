@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: 'prospectusm_regregular';
-    src: url('prospectusmreg-webfont.woff2') format('woff2'),
-         url('prospectusmreg-webfont.woff') format('woff');
+    src: url('https://github.com/dailypenn/projects.34st.com/raw/master/extra/prospectusmreg-webfont.woff2') format('woff2'),
+         url('https://github.com/dailypenn/projects.34st.com/raw/master/extra/prospectusmreg-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -16,8 +16,8 @@
 
 @font-face {
     font-family: 'prospectusmbold';
-    src: url('prospectusmbld-webfont.woff2') format('woff2'),
-         url('prospectusmbld-webfont.woff') format('woff');
+    src: url('https://github.com/dailypenn/projects.34st.com/raw/master/extra/prospectusmbld-webfont.woff2') format('woff2'),
+         url('https://github.com/dailypenn/projects.34st.com/raw/master/extra/prospectusmbld-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'prospectus_pro_lbold';
-    src: url('prospectuslbld-webfont.woff2') format('woff2'),
-         url('prospectuslbld-webfont.woff') format('woff');
+    src: url('https://github.com/dailypenn/projects.34st.com/raw/master/extra/prospectuslbld-webfont.woff2') format('woff2'),
+         url('https://github.com/dailypenn/projects.34st.com/raw/master/extra/prospectuslbld-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
