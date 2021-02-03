@@ -1,5 +1,9 @@
 /* CSS files add styling rules to your content */
 
+body {
+  overflow-x: hidden;
+}
+
 h1 {
   font-size: 7.3rem;
 }
@@ -23,12 +27,13 @@ h5 {
 }
 
 p {
+  font-size: 1.3rem;
   font-family: 'Libre Franklin', sans-serif;
 }
 
 .tan-bg-img-right {
   background-color: #DFDDD0;
-  padding: 5rem 3.9rem 8.3rem 6.9rem;
+  padding: 5rem 3.9rem 8.3rem 5.9rem;
 }
 
 .text-dgreen {
@@ -37,8 +42,9 @@ p {
 
 .start-letter {
   height: 0;
+  padding-top: 5rem;
   margin-top: -4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.6rem;
 }
 
 .black-bg-shade {
@@ -54,15 +60,14 @@ p {
 }
 
 @media (min-width: 768px) {
-  .minus-half-col {
-    margin-right: -4.2%;
-    padding-right: 5.5%;
+  .big-screen-bg-img-right { 
+    padding: 5rem 3.9rem 8.3rem 5.9rem;
   }
 }
 
 @media (max-width: 768px) {
   .small-screen-pad {
-    padding-left: 3rem;
+    padding: 0 3rem;
   }
 }
 
@@ -73,6 +78,11 @@ p {
 }
 
 #coverBg {
+  background-size: cover;
+  background-image: url("https://snworksceo.imgix.net/dpn-34s/1e87db16-26db-43da-a536-d05dffa64d8d.sized-1000x1000.png");
+}
+
+#smallCoverBg {
   background-size: cover;
   background-image: url("https://snworksceo.imgix.net/dpn-34s/1e87db16-26db-43da-a536-d05dffa64d8d.sized-1000x1000.png");
 }
@@ -109,7 +119,7 @@ p {
 #bushBg {
   background-color: #DFDDD0;
   padding-top: 2.2rem;
-  padding-right: 3.9rem;
+  padding-right: 3rem;
 }
 
 #bushCaption{
@@ -172,7 +182,6 @@ p {
   background-image: url("https://snworksceo.imgix.net/dpn-34s/d9e29bab-b59c-49d9-b4ec-de70730b5520.sized-1000x1000.png");
 }
 
-#hornblum{
+#hornblum {
   background-color: #DFDDD0;
-  padding-bottom: 5rem;
 }
