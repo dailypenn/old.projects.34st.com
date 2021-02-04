@@ -87,6 +87,10 @@ p {
   .screen-padding-2 {
     padding: 0 0rem;
   }
+
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 .quote-author {
